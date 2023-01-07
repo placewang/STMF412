@@ -1,0 +1,5 @@
+copy /y .\MDK_prj\Objects\E457_STM32F205.hex .\E475.hex
+
+
+hex2pgx.exe --headall --exec-8b 0x8006:E475.hex ssss.hex Head_E475_1s.pgh
+

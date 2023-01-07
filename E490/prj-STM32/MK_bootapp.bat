@@ -1,0 +1,1 @@
+E:\work\HJ_Head_E475_STM32F205\prj-STM32\hex2pgx.exe --headall --exec-8b 0x8009:E:\work\HJ_Head_E475_STM32F205\prj-STM32\E475.hex --exec-8b 0x7009:E:\work\HJ_Head_E475_STM32F205\prj-STM32\E490_boot.hex ssss.hex E:\work\HJ_Head_E475_STM32F205\prj-STM32\Head_E490_app_boot.pgh

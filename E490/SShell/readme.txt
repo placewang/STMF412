@@ -1,0 +1,3 @@
+  S-Shell is a command line interface through various char-based interfaces for embeded systems. The format of command function is like "uint8 Func(uint8** argv,uint8 argc);", which is the same as main function in C Language.
+
+  In a new project, U must modify file shell_cfg.h to make the system suitable for your envirment. And U can add new command to the system by adding new command struct in Shell_CMDs in file shell_cmd.c.

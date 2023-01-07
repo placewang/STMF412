@@ -1,0 +1,394 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: h lc, zhhq, LIC=RC9PC-728VR-1PFZ5-GXLFF-KPD1P-R1ZZE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+E:\work\HJ_Head_E475_STM32F205\prj-STM32\Boot_prj\E457_stm32f205_boot.uvprojx
+Project File Date:  04/24/2018
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'boot_E480_stm32f2'
+compiling dprintf.c...
+compiling time.c...
+..\..\arch_STM32103\src\time.c(12): warning:  #1295-D: Deprecated declaration TimeStart - give arg types
+  void TimeStart();
+..\..\arch_STM32103\src\time.c(13): warning:  #1295-D: Deprecated declaration TimeGet - give arg types
+  unsigned long TimeGet();
+..\..\arch_STM32103\src\time.c(23): warning:  #177-D: variable "capture" was declared but never referenced
+        unsigned long capture;
+..\..\arch_STM32103\src\time.c(58): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(122): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(143): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(164): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(432): warning:  #177-D: variable "is2ms" was declared but never referenced
+        static u16 is2ms =0;
+..\..\arch_STM32103\src\time.c(433): warning:  #177-D: variable "capture" was declared but never referenced
+        u16 capture = 0;
+..\..\arch_STM32103\src\time.c(449): warning:  #223-D: function "hook_time_50us" declared implicitly
+                hook_time_50us();               
+..\..\arch_STM32103\src\time.c(465): warning:  #1295-D: Deprecated declaration EXTI_CHECK_iscomming - give arg types
+  extern void EXTI_CHECK_iscomming();
+..\..\arch_STM32103\src\time.c(536): warning:  #223-D: function "Message_Send_4halfword" declared implicitly
+        Message_Send_4halfword(0x00F2,max_counter_us[i],last_counter[i],i );
+..\..\arch_STM32103\src\time.c(609): warning:  #223-D: function "arch_need_current_add" declared implicitly
+        Step_A=arch_need_current_add(Step_A);
+..\..\arch_STM32103\src\time.c(624): warning:  #223-D: function "arch_need_current_add" declared implicitly
+        Step_A=arch_need_current_add(Step_A);
+..\..\arch_STM32103\src\time.c(639): warning:  #223-D: function "arch_need_current_add" declared implicitly
+        Step_A=arch_need_current_add(Step_A);
+..\..\arch_STM32103\src\time.c(819): warning:  #177-D: variable "base_val" was declared but never referenced
+        int base_val;
+..\..\arch_STM32103\src\time.c(820): warning:  #177-D: variable "base_A" was declared but never referenced
+        int base_A;
+..\..\arch_STM32103\src\time.c(821): warning:  #177-D: variable "cd" was declared but never referenced
+        int cd;
+..\..\arch_STM32103\src\time.c(822): warning:  #177-D: variable "cd1" was declared but never referenced
+        int cd1;
+..\..\arch_STM32103\src\time.c(823): warning:  #177-D: variable "cz" was declared but never referenced
+        int cz=0;
+..\..\arch_STM32103\src\time.c(897): warning:  #223-D: function "arch_need_current_add" declared implicitly
+        Step_A=arch_need_current_add(Step_A);
+..\..\arch_STM32103\src\time.c: 21 warnings, 0 errors
+compiling uart.c...
+compiling gpio.c...
+compiling fsmc.c...
+..\..\arch_STM32103\src\fsmc.c(4): warning:  #47-D: incompatible redefinition of macro "Bank1_SRAM1_ADDR" (declared at line 98 of "..\..\arch_STM32103\inc\Platform_config.h")
+  #define Bank1_SRAM1_ADDR    ((u32)0x60000000)
+..\..\arch_STM32103\src\fsmc.c: 1 warning, 0 errors
+compiling eeprom.c...
+..\..\arch_STM32103\src\eeprom.c(667): warning:  #550-D: variable "OldPageAddress" was set but never used
+        u32 NewPageAddress = 0x080103FF, OldPageAddress = 0x08010000;
+..\..\arch_STM32103\src\eeprom.c: 1 warning, 0 errors
+compiling can.c...
+..\..\arch_STM32103\src_boot\can.c(58): warning:  #223-D: function "arch_Set_CANID" declared implicitly
+        CAN_FilterInitStructure.CAN_FilterIdHigh=arch_Set_CANID(0)<<5;
+..\..\arch_STM32103\src_boot\can.c(104): warning:  #550-D: variable "idx" was set but never used
+        unsigned int idx;
+..\..\arch_STM32103\src_boot\can.c(190): warning:  #223-D: function "Message_Push" declared implicitly
+                Message_Push(RxMessage.Data[0], RxMessage.Data[1], pData[1], pData[2],pData[3]);
+..\..\arch_STM32103\src_boot\can.c: 3 warnings, 0 errors
+compiling stm32f2xx_it.c...
+compiling arch_stm32.c...
+..\..\arch_STM32103\src_boot\arch_stm32.c(28): warning:  #68-D: integer conversion resulted in a change of sign
+  volatile unsigned char Check_APP_isOK=-1;
+..\..\arch_STM32103\src_boot\arch_stm32.c(179): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  void myprintf();
+..\..\arch_STM32103\src_boot\arch_stm32.c(184): warning:  #1295-D: Deprecated declaration Exec_check_app_isok_from_flash - give arg types
+  int Exec_check_app_isok_from_flash();
+..\..\arch_STM32103\src_boot\arch_stm32.c(335): warning:  #111-D: statement is unreachable
+        return stepidex;
+..\..\arch_STM32103\src_boot\arch_stm32.c(342): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\arch_STM32103\src_boot\arch_stm32.c(876): warning:  #111-D: statement is unreachable
+        break;
+..\..\arch_STM32103\src_boot\arch_stm32.c(881): warning:  #111-D: statement is unreachable
+        break;
+..\..\arch_STM32103\src_boot\arch_stm32.c(886): warning:  #111-D: statement is unreachable
+        break;
+..\..\arch_STM32103\src_boot\arch_stm32.c(891): warning:  #111-D: statement is unreachable
+                break;          
+..\..\arch_STM32103\src_boot\arch_stm32.c(1041): warning:  #223-D: function "delay" declared implicitly
+        delay(10);
+..\..\arch_STM32103\src_boot\arch_stm32.c(1074): warning:  #223-D: function "delay" declared implicitly
+                delay(100);
+..\..\arch_STM32103\src_boot\arch_stm32.c(1105): warning:  #223-D: function "delay" declared implicitly
+        delay(100);
+..\..\arch_STM32103\src_boot\arch_stm32.c(1138): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\arch_STM32103\src_boot\arch_stm32.c(1139): warning:  #550-D: variable "k" was set but never used
+        int k;
+..\..\arch_STM32103\src_boot\arch_stm32.c(1465): warning:  #223-D: function "GPIO_Configuration_default" declared implicitly
+        GPIO_Configuration_default();
+..\..\arch_STM32103\src_boot\arch_stm32.c(1472): warning:  #223-D: function "GPIO_Configuration_powerctr" declared implicitly
+        GPIO_Configuration_powerctr();
+..\..\arch_STM32103\src_boot\arch_stm32.c(1483): warning:  #223-D: function "Gpio_cfg_yarn_" declared implicitly
+        Gpio_cfg_yarn_(Yarn_use_Step);
+..\..\arch_STM32103\src_boot\arch_stm32.c(3934): warning:  #111-D: statement is unreachable
+        if (0)
+..\..\arch_STM32103\src_boot\arch_stm32.c: 18 warnings, 0 errors
+compiling upgrade.c...
+..\..\arch_STM32103\src_boot\upgrade.c(209): warning:  #223-D: function "myprintf" declared implicitly
+                dprintf("[%lx]: [%lX] <=> [%lX]\r\n", i, *(pData0 + i), *(pData1 + i));
+..\..\arch_STM32103\src_boot\upgrade.c: 1 warning, 0 errors
+compiling boot.c...
+..\..\arch_STM32103\inc\upgrade.h(12): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Start - give arg types
+  void arch_Upgrade_Set_Start();
+..\..\arch_STM32103\inc\upgrade.h(13): warning:  #1295-D: Deprecated declaration arch_Upgrade_is_Start - give arg types
+  int arch_Upgrade_is_Start();
+..\..\arch_STM32103\inc\upgrade.h(14): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Receive - give arg types
+  void arch_Upgrade_Set_Receive();
+..\..\arch_STM32103\inc\upgrade.h(16): warning:  #1295-D: Deprecated declaration arch_Upgrade_Get_Burn_Size - give arg types
+  DWORD arch_Upgrade_Get_Burn_Size();
+..\..\arch_STM32103\inc\upgrade.h(17): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Burn - give arg types
+  void arch_Upgrade_Set_Burn();
+..\..\arch_STM32103\inc\upgrade.h(18): warning:  #1295-D: Deprecated declaration arch_Upgrade_is_Burn - give arg types
+  int arch_Upgrade_is_Burn();
+..\..\arch_STM32103\inc\upgrade.h(19): warning:  #1295-D: Deprecated declaration arch_Upgrade_Finish - give arg types
+  void arch_Upgrade_Finish();
+..\..\core\src\boot.c(19): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  int myprintf();
+..\..\core\src\boot.c(144): warning:  #223-D: function "arch_Upgrade_APP_Flag_init" declared implicitly
+                                arch_Upgrade_APP_Flag_init();
+..\..\core\src\boot.c(178): warning:  #223-D: function "arch_Upgrade_APP_Flag_init" declared implicitly
+                arch_Upgrade_APP_Flag_init();
+..\..\core\src\boot.c(209): warning:  #223-D: function "arch_Get_Board_Type" declared implicitly
+                                if ((main_send_board_type!=arch_Get_Board_Type())&&(main_send_board_type))      
+..\..\core\src\boot.c(228): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+        if (Check_APP_isOK==-1)                 /*升级了老程序*/
+..\..\core\src\boot.c(76): warning:  #177-D: variable "j" was declared but never referenced
+        int i,j;
+..\..\core\src\boot.c: 13 warnings, 0 errors
+compiling massage.c...
+..\..\core\src\massage.c(49): warning:  #223-D: function "memset" declared implicitly
+        memset(MsgsendBuff[whichfifo][msg_send_wptr[whichfifo]].data,0,8);
+..\..\core\src\massage.c(50): warning:  #223-D: function "memcpy" declared implicitly
+        memcpy(MsgsendBuff[whichfifo][msg_send_wptr[whichfifo]].data,data,DL);
+..\..\core\src\massage.c(183): warning:  #223-D: function "memcpy" declared implicitly
+        memcpy(&buff[1],stbuff,6);
+..\..\core\src\massage.c: 3 warnings, 0 errors
+compiling alert.c...
+..\..\core\src\alert.c(54): warning:  #940-D: missing return statement at end of non-void function "memcpy_hlc"
+  }
+..\..\core\src\alert.c(94): warning:  #223-D: function "arch_SendMessage" declared implicitly
+                arch_SendMessage(ACTION_DATA,buf,4);
+..\..\core\src\alert.c(99): warning:  #117-D: non-void function "alert_send_content_" should return a value
+                return;
+..\..\core\src\alert.c(128): warning:  #223-D: function "arch_SendMessage" declared implicitly
+                        arch_SendMessage(ACTION_DATA,buf,k);
+..\..\core\src\alert.c(132): warning:  #940-D: missing return statement at end of non-void function "alert_send_content_"
+  }
+..\..\core\src\alert.c(142): warning:  #940-D: missing return statement at end of non-void function "alert_Set_overloaddata"
+  }
+..\..\core\src\alert.c(153): warning:  #223-D: function "memset" declared implicitly
+        memset(alert_content_,0,MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(171): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%D(sys)系统%D(a1:0-3)号度目电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(175): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%D(sys)系统%D(a1:0-3)号度目电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(191): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%t(a1=>184=\"左\";185=\"右\";\"\")方向传感器异常",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(195): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%t(a1=>184=\"左\";185=\"右\";\"\")方向传感器异常",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(204): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%D(sys)系统CAN缓冲区溢出",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(208): warning:  #223-D: function "memcpy" declared implicitly
+                                        memcpy(alert_content_,"%D(sys)系统CAN缓冲区溢出",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(228): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>49=\"1\";50=\"2\";51=\"3\";52=\"4\";\"0\")号选针器未清刀",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(232): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>49=\"1\";50=\"2\";51=\"3\";52=\"4\";\"0\")号选针器未清刀",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(242): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%i(a2:0-7)V电源异常(%x(a2:8-15))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(246): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%i(a2:0-7)V电源异常(%x(a2:8-15))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(254): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统12V电源异常",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(258): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统12V电源异常",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(266): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>0=\"后床\";1=\"前床\";\"机头\")撞针报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(270): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>0=\"后床\";1=\"前床\";\"机头\")撞针报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(278): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板失效",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(282): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板失效",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(292): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>0=\"左\";1=\"右\";\"\")探针报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(296): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2=>0=\"左\";1=\"右\";\"\")探针报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(306): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:2-3)号生克电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(310): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:2-3)号生克电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);               
+..\..\core\src\alert.c(320): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%t(a1:0-0=>0=\"3\";\"4\")号生克电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(324): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%t(a1:0-0=>0=\"3\";\"4\")号生克电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(334): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号压脚电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(338): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号压脚电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(348): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号动作电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(352): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号动作电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(365): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号动作电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(369): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:1-1)号动作电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);               
+..\..\core\src\alert.c(379): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:2-2)号推针电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(383): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:2-2)号推针电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(393): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:0-2)号紧吊电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(397): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%D(a1:0-2)号紧吊电机%t(a2:12-15=>2=\"失步+\";3=\"失步-\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);       
+..\..\core\src\alert.c(405): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头绑定主控板失败",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(409): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头绑定主控板失败",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(417): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头%t(a2=>0=\"-\";2=\"-\";3=\"-\";\"+\")24V(%t(a2=>0=\"3\";2=\"1.5\";3=\"8\";4=\"3\";5=\"1.5\";1=\"8\")A)通电时间过长",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(421): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头%t(a2=>0=\"-\";2=\"-\";3=\"-\";\"+\")24V(%t(a2=>0=\"3\";2=\"1.5\";3=\"8\";4=\"3\";5=\"1.5\";1=\"8\")A)通电时间过长",MAX_CHAR_COUNT_ALERT);           
+..\..\core\src\alert.c(429): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头[%t(a2:8-8=>0=\"-\";1=\"+\";\"\")24V]电源关闭",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(433): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头[%t(a2:8-8=>0=\"-\";1=\"+\";\"\")24V]电源关闭",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(441): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板过流(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(445): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板过流(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(453): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头[%t(a2=>0=\"-\";\"+\")24V]过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(457): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头[%t(a2=>0=\"-\";\"+\")24V]过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(466): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板过流导致电源关闭(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(470): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"机头板过流导致电源关闭(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(479): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%d(a2)号纱嘴电磁铁过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(483): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%d(a2)号纱嘴电磁铁过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(492): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%d(a2:8-15)号选针器第%d(a2:0-7)刀过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(496): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%d(a2:8-15)号选针器第%d(a2:0-7)刀过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(505): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%t(a2:8-15=>0=\"后\";\"前\")床%d(a2:0-7)号电磁铁过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(509): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统%t(a2:8-15=>0=\"后\";\"前\")床%d(a2:0-7)号电磁铁过流",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(518): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统电磁铁状态未清零(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(522): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统电磁铁状态未清零(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(531): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"换向传感器状态异常(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(535): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"换向传感器状态异常(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(544): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(a2:12-15)号推针电机未完成(%d(a2:0-11))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(548): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(a2:12-15)号推针电机未完成(%d(a2:0-11))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(557): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(a2:12-15)号生克电机未完成(%d(a2:0-11))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(561): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(a2:12-15)号生克电机未完成(%d(a2:0-11))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(570): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统度目电机未完成(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(574): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统度目电机未完成(%d(a2))",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(583): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"未知电机类型报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(587): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"未知电机类型报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(596): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"系统%D(sys)程序与硬件版本不匹配",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(600): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"系统%D(sys)程序与硬件版本不匹配",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(609): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"纱嘴电机命令错 ",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(613): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"纱嘴电机命令错 ",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(622): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统CPU超温报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(626): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%D(sys)系统CPU超温报警",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(635): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%d(a1:8-15)号电机编码器%t(a2:12-15=>2=\"失步\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(639): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%d(a1:8-15)号电机编码器%t(a2:12-15=>2=\"失步\";\"报警\")[%d(a2:0-11)]",MAX_CHAR_COUNT_ALERT);
+..\..\core\src\alert.c(648): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2:4-7=>15=\"纱嘴电磁铁\";14=\"动作电磁铁\";\"选针器\")导通[%d(a2:4-7)][%d(a2:0-3)]",MAX_CHAR_COUNT_ALERT);           
+..\..\core\src\alert.c(652): warning:  #223-D: function "memcpy" declared implicitly
+                                memcpy(alert_content_,"%t(a2:4-7=>15=\"纱嘴电磁铁\";14=\"动作电磁铁\";\"选针器\")导通[%d(a2:4-7)][%d(a2:0-3)]",MAX_CHAR_COUNT_ALERT);           
+..\..\core\src\alert.c(666): warning:  #111-D: statement is unreachable
+                break;  
+..\..\core\src\alert.c(669): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+        ac_len = strlen_hlc(alert_content_);
+..\..\core\src\alert.c(676): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+        alert_send_content_(alert_content_,ac_len,start_code,a_code);
+..\..\core\src\alert.c(679): warning:  #940-D: missing return statement at end of non-void function "alert_str_with_AlertCodeArg"
+  }
+..\..\core\src\alert.c(690): warning:  #940-D: missing return statement at end of non-void function "Send_alert_content_loop"
+  }
+..\..\core\src\alert.c(695): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\core\src\alert.c(696): warning:  #177-D: variable "Alert" was declared but never referenced
+        ALERT_TYPE *Alert;
+..\..\core\src\alert.c(697): warning:  #177-D: variable "undefstr" was declared but never referenced
+        char undefstr[100];
+..\..\core\src\alert.c(1183): warning:  #128-D: loop is not reachable
+                for (i=0;i<ALERT_MAX_BACK;i++)
+..\..\core\src\alert.c(46): warning:  #177-D: function "memcpy_hlc" was declared but never referenced
+  static int memcpy_hlc(char *des,const char *ssr,unsigned int strlen)
+..\..\core\src\alert.c: 89 warnings, 0 errors
+compiling misc.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+compiling stm32f2xx_fsmc.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_hash.c...
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+compiling system_stm32f2xx.c...
+assembling startup_stm32f2xx.s...
+linking...
+Program Size: Code=12740 RO-data=420 RW-data=192 ZI-data=12900  
+FromELF: creating hex file...
+".\Objects\E490_stm32f205_boot.axf" - 0 Error(s), 150 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\work\HJ_Head_E475_STM32F205\prj-STM32\Boot_prj\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.3.0
+
+<h2>Collection of Component Files used:</h2>

@@ -1,0 +1,2051 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: h lc, zhhq, LIC=RC9PC-728VR-1PFZ5-GXLFF-KPD1P-R1ZZE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+Target DLL:      UL2CM3.DLL V1.153.0.0
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+E:\work\HJ_Head_new1sys_Stm32F205\prj-STM32\MDK_prj\E457_STM32F205.uvprojx
+Project File Date:  07/07/2015
+
+<h2>Output:</h2>
+Rebuild target 'E457_205'
+compiling alert.c...
+compiling hq_can_key.c...
+compiling main.c...
+..\..\core\inc\step.h(177): warning:  #1295-D: Deprecated declaration StepMotor_Sinker_Get_Busy - give arg types
+  int StepMotor_Sinker_Get_Busy();
+..\..\arch_STM32103\inc\Platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\Platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\core\src\main.c(136): warning:  #1295-D: Deprecated declaration ADC_start_main - give arg types
+  extern void ADC_start_main();
+..\..\core\src\main.c(179): warning:  #1295-D: Deprecated declaration arch_time_500_pulse - give arg types
+  int arch_time_500_pulse();
+..\..\core\src\main.c(352): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned int i;
+..\..\core\src\main.c(785): warning:  #223-D: function "arch_shock_timer" declared implicitly
+        arch_shock_timer();     
+..\..\core\src\main.c(770): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned int i;//, j;
+..\..\core\src\main.c(848): warning:  #223-D: function "arch_Jacquard_Clear_Step" declared implicitly
+                                arch_Jacquard_Clear_Step(j,0);
+..\..\core\src\main.c(865): warning:  #223-D: function "arch_Jacquard_Clear_Step" declared implicitly
+                        arch_Jacquard_Clear_Step(j,1);
+..\..\core\src\main.c(818): warning:  #177-D: variable "i" was declared but never referenced
+        register unsigned int i,j;
+..\..\core\src\main.c(1031): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+        if(Get_StepMotor_isveryenable_IDself(idself,st))
+..\..\core\src\main.c(1034): warning:  #223-D: function "StepMotor_get_zeroID_with_IDself" declared implicitly
+        if (arch_StepMotor_Zero(StepMotor_get_zeroID_with_IDself(idself,st)))
+..\..\core\src\main.c(1036): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+        if (arch_StepMotor_work(StepMotor_get_workID_with_IDself(idself,st)))
+..\..\core\src\main.c(1036): warning:  #223-D: function "StepMotor_get_workID_with_IDself" declared implicitly
+        if (arch_StepMotor_work(StepMotor_get_workID_with_IDself(idself,st)))
+..\..\core\src\main.c(1048): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+        if(Get_StepMotor_isveryenable_IDself(idself,st))
+..\..\core\src\main.c(1057): warning:  #223-D: function "StepMotor_get_zeroID_with_IDself" declared implicitly
+                return !arch_StepMotor_Zero(StepMotor_get_zeroID_with_IDself(idself,st));               
+..\..\core\src\main.c(1059): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                return !arch_StepMotor_work(StepMotor_get_workID_with_IDself(idself,st));               
+..\..\core\src\main.c(1059): warning:  #223-D: function "StepMotor_get_workID_with_IDself" declared implicitly
+                return !arch_StepMotor_work(StepMotor_get_workID_with_IDself(idself,st));               
+..\..\core\src\main.c(1061): warning:  #223-D: function "StepMotor_get_no_with_IDself" declared implicitly
+                return !StepMotor_Get_Busyidx(StepMotor_get_no_with_IDself(idself,st)); 
+..\..\core\src\main.c(1100): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1112): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                                if(arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index)) 
+..\..\core\src\main.c(1118): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1136): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1140): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1158): warning:  #940-D: missing return statement at end of non-void function "Get_SIG_PH_Status"
+  }
+..\..\core\src\main.c(1183): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1191): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                                if(arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index)) 
+..\..\core\src\main.c(1197): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1200): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1232): warning:  #223-D: function "arch_get_dir1" declared implicitly
+        if(arch_get_dir1())
+..\..\core\src\main.c(1237): warning:  #223-D: function "arch_get_dir2" declared implicitly
+        if(arch_get_dir2())
+..\..\core\src\main.c(1333): warning:  #223-D: function "arch_Get_ID" declared implicitly
+  data = arch_Get_ID();
+..\..\core\src\main.c(1347): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\core\src\main.c(1464): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,arch_Get_DirStatus(),0,cmd->arg3);
+..\..\core\src\main.c(1472): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,Get_ZeroStatus(cmd->arg1?1:0),0,cmd->arg3);
+..\..\core\src\main.c(1521): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,Get_SIG_PH_Status(),0,cmd->arg3);     
+..\..\core\src\main.c(1541): warning:  #223-D: function "Stepmotor_Set_ID_Type_with_NO" declared implicitly
+                        Stepmotor_Set_ID_Type_with_NO(cmd->arg1_l,cmd->arg2_l,cmd->arg2_h,cmd->arg1_h);
+..\..\core\src\main.c(1544): warning:  #223-D: function "Stepmotor_Set_inputID_with_NO" declared implicitly
+                        Stepmotor_Set_inputID_with_NO(cmd->arg1_l,cmd->arg2_l,cmd->arg2_h,cmd->arg1_h);
+..\..\core\src\main.c(1595): warning:  #223-D: function "Get_StepMotor_isveryenable_IDall" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDall(cmd->arg2))
+..\..\core\src\main.c(1616): warning:  #223-D: function "Get_StepMotor_isveryenable_IDall" declared implicitly
+                                                if(Get_StepMotor_isveryenable_IDall(cmd->arg2))
+..\..\core\src\main.c(1618): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                                Massage_Send_4halfword(CMD_RETURN,Get_Status_StepType_sig(cmd->arg1_l,MOTOR_TYPE_DENSITY,cmd->arg2),0,cmd->arg3);
+..\..\core\src\main.c(1622): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                                Massage_Send_4halfword(CMD_RETURN,Get_Status_StepType(cmd->arg1_l,MOTOR_TYPE_DENSITY),0,cmd->arg3);
+..\..\core\src\main.c(1634): warning:  #223-D: function "Get_StepMotor_isveryenable_IDall" declared implicitly
+                                                if(Get_StepMotor_isveryenable_IDall(cmd->arg2))
+..\..\core\src\main.c(1639): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                                        Massage_Send_4halfword(CMD_RETURN,Get_Status_StepType_sig(cmd->arg1_l,MOTOR_TYPE_DENSITY,cmd->arg2),0,cmd->arg3);                                                       
+..\..\core\src\main.c(1637): warning:  #550-D: variable "stno" was set but never used
+                                                        unsigned int stno;
+..\..\core\src\main.c(1657): warning:  #223-D: function "Get_StepMotor_isveryenable_IDall" declared implicitly
+                                if(Get_StepMotor_isveryenable_IDall( cmd->arg1_l))
+..\..\core\src\main.c(1666): warning:  #223-D: function "StepMotor_isr_exec" declared implicitly
+                                        StepMotor_isr_exec(cmd->arg1_l, cmd->arg2, 1);
+..\..\core\src\main.c(1671): warning:  #223-D: function "Get_StepMotor_isveryenable_IDall" declared implicitly
+                                if(Get_StepMotor_isveryenable_IDall(cmd->arg1_h))
+..\..\core\src\main.c(1678): warning:  #223-D: function "StepMotor_Set_Input_error" declared implicitly
+                                                StepMotor_Set_Input_error(stno, cmd->arg2);
+..\..\core\src\main.c(1712): warning:  #223-D: function "StepMotor_Set_VeryMode" declared implicitly
+                                        StepMotor_Set_VeryMode(cmd->arg2);
+..\..\core\src\main.c(1721): warning:  #223-D: function "StepMotor_Set_Zero_go_Steps" declared implicitly
+                                        StepMotor_Set_Zero_go_Steps(cmd->arg2);
+..\..\core\src\main.c(1729): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(1772): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_SKINER))
+..\..\core\src\main.c(1780): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_ACTION))
+..\..\core\src\main.c(1782): warning:  #223-D: function "Exec_Triangle_step" declared implicitly
+                                                Exec_Triangle_step(cmd->arg1_h, cmd->arg2,cmd->arg3_l &0x03);
+..\..\core\src\main.c(1788): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_FEET))
+..\..\core\src\main.c(1808): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_SKINER))
+..\..\core\src\main.c(1814): warning:  #223-D: function "StepMotor_Sinker_ResetALL" declared implicitly
+                                                        StepMotor_Sinker_ResetALL();
+..\..\core\src\main.c(1823): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_ACTION))
+..\..\core\src\main.c(1825): warning:  #223-D: function "StepMotor_Action_Reset" declared implicitly
+                                                        StepMotor_Action_Reset(cmd->arg1_h);
+..\..\core\src\main.c(1829): warning:  #223-D: function "StepMotor_Action_ResetALL" declared implicitly
+                                                        StepMotor_Action_ResetALL();
+..\..\core\src\main.c(1838): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_FEET))
+..\..\core\src\main.c(1840): warning:  #223-D: function "StepMoor_Feet_Reset" declared implicitly
+                                                        StepMoor_Feet_Reset(cmd->arg1_h);
+..\..\core\src\main.c(1844): warning:  #223-D: function "StepMoor_Feet_ResetALL" declared implicitly
+                                                        StepMoor_Feet_ResetALL();
+..\..\core\src\main.c(1981): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,ZWBP_sts,0,cmd->arg3);
+..\..\core\src\main.c(2002): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,zw_st,0,cmd->arg3);
+..\..\core\src\main.c(2012): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_SKINER))
+..\..\core\src\main.c(2019): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_ACTION))
+..\..\core\src\main.c(2021): warning:  #223-D: function "StepMotor_Action_Set_Position" declared implicitly
+                                                        StepMotor_Action_Set_Position(cmd->arg1_h, cmd->arg2);
+..\..\core\src\main.c(2026): warning:  #223-D: function "Get_StepMotor_isveryenable_IDself" declared implicitly
+                                                        if(Get_StepMotor_isveryenable_IDself(cmd->arg1_h,MOTOR_TYPE_FEET))
+..\..\core\src\main.c(2028): warning:  #223-D: function "StepMotor_Feet_Set_Position" declared implicitly
+                                                        StepMotor_Feet_Set_Position(cmd->arg1_h, cmd->arg2);
+..\..\core\src\main.c(2040): warning:  #223-D: function "StepMotor_Other_SetSpeed" declared implicitly
+                                StepMotor_Other_SetSpeed(cmd->arg1_l+2,cmd->arg1_h,cmd->arg2);
+..\..\core\src\main.c(2050): warning:  #223-D: function "StepMotor_Other_Set_Check" declared implicitly
+                                        StepMotor_Other_Set_Check(cmd->arg1_h,cmd->arg2);
+..\..\core\src\main.c(2092): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                Massage_Send_4halfword(CMD_RETURN,sts1,sts2,cmd->arg3);
+..\..\core\src\main.c(2162): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(2183): warning:  #223-D: function "arch_Get_ID" declared implicitly
+                unsigned char id=arch_Get_ID();
+..\..\core\src\main.c(2278): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+        Massage_Send_4halfword(CMD_RETURN,jqd_status[cmd->arg1 & 0x7],0,cmd->arg3);
+..\..\core\src\main.c(2379): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+                                                Massage_Send_4halfword(CMD_RETURN,Get_ErrorStatus(),0,cmd->arg3);
+..\..\core\src\main.c(2463): warning:  #223-D: function "Massage_Send_4halfword" declared implicitly
+        Massage_Send_4halfword(CMD_RETURN,Get_Version(),0,cmd->arg3);
+..\..\core\src\main.c(2515): warning:  #111-D: statement is unreachable
+                        break;
+..\..\core\src\main.c(2527): warning:  #223-D: function "arch_shock_reset" declared implicitly
+                                arch_shock_reset();     
+..\..\core\src\main.c(2532): warning:  #223-D: function "arch_shock_activate" declared implicitly
+                                arch_shock_activate(CNdata);
+..\..\core\src\main.c(2537): warning:  #186-D: pointless comparison of unsigned integer with zero
+                                if ((CNdata>=0) &&(CNdata<=100))                
+..\..\core\src\main.c(2539): warning:  #223-D: function "alert_set_shock_PWM" declared implicitly
+                                        alert_set_shock_PWM(150+3*CNdata);
+..\..\core\src\main.c(3497): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned int i;
+..\..\core\src\main.c: 86 warnings, 0 errors
+compiling massage.c...
+compiling step.c...
+..\..\core\inc\step.h(177): warning:  #1295-D: Deprecated declaration StepMotor_Sinker_Get_Busy - give arg types
+  int StepMotor_Sinker_Get_Busy();
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\core\src\step.c(74): warning:  #1295-D: Deprecated declaration check_feet_sts - give arg types
+  void check_feet_sts();
+..\..\core\src\step.c(404): warning:  #177-D: variable "stepid" was declared but never referenced
+        unsigned char stepid;
+..\..\core\src\step.c(423): warning:  #177-D: variable "stepid" was declared but never referenced
+        unsigned char stepid;
+..\..\core\src\step.c(486): warning:  #223-D: function "arch_Get_ID" declared implicitly
+                if ((arch_Get_ID()) &&(i>=4) )
+..\..\core\src\step.c(835): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if ((steptype >=0) &&(steptype <=MOTOR_TYPE_FEET-2))
+..\..\core\src\step.c(1005): warning:  #177-D: variable "Step" was declared but never referenced
+        STEP_TYPE *Step;
+..\..\core\src\step.c(1006): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned int i;
+..\..\core\src\step.c(1015): warning:  #177-D: variable "Step" was declared but never referenced
+        STEP_TYPE *Step;
+..\..\core\src\step.c(1016): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\core\src\step.c(1055): warning:  #940-D: missing return statement at end of non-void function "StepMotor_get_IDall_with_IDself"
+  }
+..\..\core\src\step.c(1194): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\core\src\step.c(1206): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\core\src\step.c(1377): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+        work = arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index);
+..\..\core\src\step.c(1363): warning:  #550-D: variable "work" was set but never used
+        int work;
+..\..\core\src\step.c(1658): warning:  #177-D: variable "iswork" was declared but never referenced
+        unsigned int iswork;
+..\..\core\src\step.c(1988): warning:  #177-D: label "speed_set" was declared but never referenced
+  speed_set:
+..\..\core\src\step.c(2061): warning:  #223-D: function "Triangle_is_left_Sign" declared implicitly
+                                                if (!Triangle_is_left_Sign(i)){
+..\..\core\src\step.c(2079): warning:  #223-D: function "Triangle_is_right_Sign" declared implicitly
+                                                if (!Triangle_is_right_Sign(i)){
+..\..\core\src\step.c(2611): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                sign_1 = arch_StepMotor_work(StepMotor_get_workID_with_NO(stepno));
+..\..\core\src\step.c(2793): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+        work = arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index);
+..\..\core\src\step.c(2749): warning:  #177-D: variable "step_alert_detect" was declared but never referenced
+        int step_alert_detect;
+..\..\core\src\step.c(3758): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                                        if (!arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index))
+..\..\core\src\step.c(3796): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                                        if (!arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index))
+..\..\core\src\step.c(3731): warning:  #177-D: variable "feet_count" was declared but never referenced
+        int feet_count;
+..\..\core\src\step.c(3907): warning:  #223-D: function "arch_StepMotor_work" declared implicitly
+                                if (!arch_StepMotor_work(Step->moto_remap_config.moto_work_input_index))
+..\..\core\src\step.c(3886): warning:  #177-D: variable "feet_count" was declared but never referenced
+        int feet_count;
+..\..\core\src\step.c(4086): warning:  #177-D: variable "j" was declared but never referenced
+        int i,j;
+..\..\core\src\step.c: 30 warnings, 0 errors
+compiling ver.c...
+compiling adc.c...
+..\..\arch_STM32103\src\adc.c(213): warning:  #177-D: variable "j" was declared but never referenced
+        u32 i,j;
+..\..\arch_STM32103\src\adc.c(231): warning:  #223-D: function "printf_enable" declared implicitly
+        printf_enable();
+..\..\arch_STM32103\src\adc.c(244): warning:  #223-D: function "myprintf" declared implicitly
+                myprintf("adc test %d\r\n", Value);
+..\..\arch_STM32103\src\adc.c(227): warning:  #177-D: variable "v" was declared but never referenced
+        u32 v,Value;
+..\..\arch_STM32103\src\adc.c: 4 warnings, 0 errors
+compiling arch_stm32.c...
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\arch_STM32103\src\arch_stm32.c(79): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  void myprintf();
+..\..\arch_STM32103\src\arch_stm32.c(86): warning:  #1295-D: Deprecated declaration EMF_Get_YARN_Status - give arg types
+  unsigned int EMF_Get_YARN_Status();
+..\..\arch_STM32103\src\arch_stm32.c(660): warning:  #177-D: variable "addr" was declared but never referenced
+        int addr;
+..\..\arch_STM32103\src\arch_stm32.c(707): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\arch_STM32103\src\arch_stm32.c(1048): warning:  #223-D: function "alert_set_shock_PWM" declared implicitly
+        alert_set_shock_PWM(180);
+..\..\arch_STM32103\src\arch_stm32.c(1190): warning:  #177-D: variable "status" was declared but never referenced
+        int status;
+..\..\arch_STM32103\src\arch_stm32.c(1207): warning:  #177-D: variable "j" was declared but never referenced
+        char i, j;
+..\..\arch_STM32103\src\arch_stm32.c(1526): warning:  #223-D: function "NVIC_SETFAULTMASK" declared implicitly
+        NVIC_SETFAULTMASK();
+..\..\arch_STM32103\src\arch_stm32.c(1527): warning:  #223-D: function "NVIC_GenerateSystemReset" declared implicitly
+        NVIC_GenerateSystemReset();
+..\..\arch_STM32103\src\arch_stm32.c(1538): warning:  #223-D: function "__MSR_MSP" declared implicitly
+        __MSR_MSP(*(volatile uint32_t*) APP_START_ADDRESS);
+..\..\arch_STM32103\src\arch_stm32.c(1570): warning:  #223-D: function "FLASH_GetReadOutProtectionStatus" declared implicitly
+        if(FLASH_GetReadOutProtectionStatus() == RESET)
+..\..\arch_STM32103\src\arch_stm32.c(1573): warning:  #223-D: function "FLASH_ReadOutProtection" declared implicitly
+                FLASH_ReadOutProtection(ENABLE) ;
+..\..\arch_STM32103\src\arch_stm32.c(1574): warning:  #223-D: function "NVIC_GenerateSystemReset" declared implicitly
+                NVIC_GenerateSystemReset();
+..\..\arch_STM32103\src\arch_stm32.c(1580): warning:  #223-D: function "FLASH_GetReadOutProtectionStatus" declared implicitly
+        return (FLASH_GetReadOutProtectionStatus() == SET);
+..\..\arch_STM32103\src\arch_stm32.c(1648): warning:  #223-D: function "arch_adc_test" declared implicitly
+        dc_status = arch_adc_test();
+..\..\arch_STM32103\src\arch_stm32.c(2120): warning:  #1295-D: Deprecated declaration Get_Version - give arg types
+  unsigned int Get_Version();
+..\..\arch_STM32103\src\arch_stm32.c(2121): warning:  #1295-D: Deprecated declaration StepMotor_Encoder_Load - give arg types
+  void StepMotor_Encoder_Load();
+..\..\arch_STM32103\src\arch_stm32.c(2162): warning:  #223-D: function "Time_PWM_init" declared implicitly
+        Time_PWM_init();
+..\..\arch_STM32103\src\arch_stm32.c(2168): warning:  #223-D: function "ADC_HardInit" declared implicitly
+        ADC_HardInit();
+..\..\arch_STM32103\src\arch_stm32.c(2169): warning:  #223-D: function "DAC_HardInit" declared implicitly
+        DAC_HardInit();
+..\..\arch_STM32103\src\arch_stm32.c: 22 warnings, 0 errors
+compiling can.c...
+..\..\arch_STM32103\src\can.c(56): warning:  #223-D: function "arch_Set_CANID" declared implicitly
+        CAN_FilterInitStructure.CAN_FilterIdHigh=arch_Set_CANID(0)<<5;
+..\..\arch_STM32103\src\can.c(98): warning:  #550-D: variable "idx" was set but never used
+        unsigned int idx;
+..\..\arch_STM32103\src\can.c: 2 warnings, 0 errors
+compiling coder.c...
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\arch_STM32103\src\coder.c: 2 warnings, 0 errors
+compiling eeprom.c...
+..\..\arch_STM32103\src\eeprom.c(71): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE0_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(81): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE0_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(142): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE1_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(152): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE1_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(192): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE1_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(233): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+                                FlashStatus = FLASH_ErasePage(PAGE0_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(360): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+        FlashStatus = FLASH_ErasePage(PAGE0_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(360): warning:  #188-D: enumerated type mixed with another type
+        FlashStatus = FLASH_ErasePage(PAGE0_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(378): warning:  #188-D: enumerated type mixed with another type
+        FlashStatus = FLASH_ErasePage(PAGE1_BASE_ADDRESS);
+..\..\arch_STM32103\src\eeprom.c(600): warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+        FlashStatus = FLASH_ErasePage(OldPageAddress);
+..\..\arch_STM32103\src\eeprom.c(600): warning:  #188-D: enumerated type mixed with another type
+        FlashStatus = FLASH_ErasePage(OldPageAddress);
+..\..\arch_STM32103\src\eeprom.c: 11 warnings, 0 errors
+compiling exti.c...
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\arch_STM32103\src\exti.c: 2 warnings, 0 errors
+compiling fsmc.c...
+compiling gpio.c...
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\arch_STM32103\src\gpio.c: 2 warnings, 0 errors
+compiling iwdg.c...
+compiling stm32f2xx_it.c...
+..\..\arch_STM32103\inc\platform_config.h(439): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_JQD1" (declared at line 190)
+  #define EXT_OVERLOAD_JQD1()   XZ1_NEGATIVE24V_ALARM_INPUT() 
+..\..\arch_STM32103\inc\platform_config.h(447): warning:  #47-D: incompatible redefinition of macro "EXT_OVERLOAD_YARN" (declared at line 189)
+   #define EXT_OVERLOAD_YARN()  SZ1_NEGATIVE24V_ALARM_INPUT()
+..\..\arch_STM32103\src\stm32f2xx_it.c: 2 warnings, 0 errors
+compiling time.c...
+..\..\arch_STM32103\src\time.c(9): warning:  #1295-D: Deprecated declaration TimeStart - give arg types
+  void TimeStart();
+..\..\arch_STM32103\src\time.c(10): warning:  #1295-D: Deprecated declaration TimeGet - give arg types
+  unsigned long TimeGet();
+..\..\arch_STM32103\src\time.c: 2 warnings, 0 errors
+compiling uart.c...
+compiling shell.c...
+..\..\SShell\shell.c(29): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  int myprintf();
+..\..\SShell\shell.c(473): warning:  #550-D: variable "idx" was set but never used
+        int idx;
+..\..\SShell\shell.c: 2 warnings, 0 errors
+compiling dprintf.c...
+compiling commands.c...
+..\..\misc\commands.c(19): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  int myprintf();
+..\..\misc\commands.c(24): warning:  #1295-D: Deprecated declaration TimeStart - give arg types
+  void TimeStart();
+..\..\misc\commands.c(25): warning:  #1295-D: Deprecated declaration TimeGet - give arg types
+  unsigned long TimeGet();
+..\..\misc\commands.c(85): warning:  #1295-D: Deprecated declaration StepMotor_Encoder_Save - give arg types
+  void StepMotor_Encoder_Save();
+..\..\misc\commands.c(86): warning:  #1295-D: Deprecated declaration StepMotor_Encoder_Load - give arg types
+  void StepMotor_Encoder_Load();
+..\..\misc\commands.c: 5 warnings, 0 errors
+compiling misc.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+compiling stm32f2xx_fsmc.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_hash.c...
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+assembling startup_stm32f2xx.s...
+linking...
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol FLASH_GetReadOutProtectionStatus (referred from arch_stm32.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol FLASH_ReadOutProtection (referred from arch_stm32.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol NVIC_GenerateSystemReset (referred from arch_stm32.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol NVIC_SETFAULTMASK (referred from arch_stm32.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol __MSR_MSP (referred from arch_stm32.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol FLASH_ErasePage (referred from eeprom.o).
+.\Objects\E457_STM32F205.axf: Error: L6218E: Undefined symbol SystemInit (referred from startup_stm32f2xx.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 7 error messages.
+".\Objects\E457_STM32F205.axf" - 7 Error(s), 172 Warning(s).
+Target not created.
+</pre>
+</body>
+</html>
+c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+assembling startup_stm32f2xx.s...
+".\Objects\E457_STM32F205.axf" - 8 Error(s), 173 Warning(s).
+Target not created.
+help"),Shell_Help,STR_TYP("Shell Help.")},
+..\..\SShell\shell.c: 0 warnings, 30 errors
+compiling misc.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+".\Objects\E457_STM32F205.axf" - 30 Error(s), 165 Warning(s).
+Project build/rebuild aborted.
+QChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQChannel;
+..\..\arch_STM32103\src\time.c(85): error:  #20: identifier "TIM3_IRQChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQChannel;
+..\..\arch_STM32103\src\time.c(91): error:  #20: identifier "TIM5_IRQChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = TIM5_IRQChannel;
+..\..\arch_STM32103\src\time.c: 2 warnings, 3 errors
+compiling uart.c...
+..\..\arch_STM32103\src\uart.c(26): error:  #20: identifier "USART1_IRQChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQChannel;
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c: 0 warnings, 2 errors
+compiling misc.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+compiling stm32f2xx_fsmc.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_hash.c...
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+".\Objects\E457_STM32F205.axf" - 27 Error(s), 164 Warning(s).
+Target not created.
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+..\..\arch_STM32103\src\uart.c(20): warning:  #223-D: function "USART_StructInit" declared implicitly
+        USART_StructInit(&USART_InitStructure);
+..\..\arch_STM32103\src\uart.c(22): warning:  #223-D: function "USART_Init" declared implicitly
+        USART_Init(USART1, &USART_InitStructure);
+..\..\arch_STM32103\src\uart.c(24): warning:  #223-D: function "USART_ITConfig" declared implicitly
+        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\..\arch_STM32103\src\uart.c(24): error:  #20: identifier "USART_IT_RXNE" is undefined
+        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\..\arch_STM32103\src\uart.c(26): error:  #20: identifier "USART1_IRQChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQChannel;
+..\..\arch_STM32103\src\uart.c(30): warning:  #223-D: function "NVIC_Init" declared implicitly
+        NVIC_Init(&NVIC_InitStructure);
+..\..\arch_STM32103\src\uart.c(33): warning:  #223-D: function "USART_Cmd" declared implicitly
+        USART_Cmd(USART1, ENABLE);
+..\..\arch_STM32103\src\uart.c(38): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(38): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(39): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1,data);
+..\..\arch_STM32103\src\uart.c(47): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(47): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(51): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(63): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(63): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(64): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+        return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(69): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(69): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(70): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, ch);
+..\..\arch_STM32103\src\uart.c(72): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c(98): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, (uint8_t) ch);
+..\..\arch_STM32103\src\uart.c(100): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(100): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(106): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(106): error:  #20: identifier "USART_IT_RXNE" is undefined
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(109): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                shell_rcv_char(USART_ReceiveData(USART1));      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 130 Error(s), 108 Warning(s).
+Target not created.
+;      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 131 Error(s), 109 Warning(s).
+Target not created.
+T_CC3" is undefined
+        if (TIM_GetITStatus(TIM5, TIM_IT_CC3) != RESET)
+..\..\arch_STM32103\src\time.c: 42 warnings, 30 errors
+compiling uart.c...
+..\..\arch_STM32103\src\uart.c(11): error:  #20: identifier "USART_InitTypeDef" is undefined
+        USART_InitTypeDef USART_InitStructure;
+..\..\arch_STM32103\src\uart.c(12): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+        NVIC_InitTypeDef NVIC_InitStructure;
+..\..\arch_STM32103\src\uart.c(14): warning:  #223-D: function "USART_DeInit" declared implicitly
+        USART_DeInit(USART1);
+..\..\arch_STM32103\src\uart.c(17): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+..\..\arch_STM32103\src\uart.c(17): error:  #20: identifier "RCC_APB2Periph_USART1" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+..\..\arch_STM32103\src\uart.c(20): warning:  #223-D: function "USART_StructInit" declared implicitly
+        USART_StructInit(&USART_InitStructure);
+..\..\arch_STM32103\src\uart.c(22): warning:  #223-D: function "USART_Init" declared implicitly
+        USART_Init(USART1, &USART_InitStructure);
+..\..\arch_STM32103\src\uart.c(24): warning:  #223-D: function "USART_ITConfig" declared implicitly
+        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\..\arch_STM32103\src\uart.c(24): error:  #20: identifier "USART_IT_RXNE" is undefined
+        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\..\arch_STM32103\src\uart.c(26): error:  #20: identifier "USART1_IRQChannel" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQChannel;
+..\..\arch_STM32103\src\uart.c(30): warning:  #223-D: function "NVIC_Init" declared implicitly
+        NVIC_Init(&NVIC_InitStructure);
+..\..\arch_STM32103\src\uart.c(33): warning:  #223-D: function "USART_Cmd" declared implicitly
+        USART_Cmd(USART1, ENABLE);
+..\..\arch_STM32103\src\uart.c(38): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(38): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(39): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1,data);
+..\..\arch_STM32103\src\uart.c(47): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(47): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(51): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(63): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(63): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(64): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+        return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(69): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(69): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(70): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, ch);
+..\..\arch_STM32103\src\uart.c(72): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c(98): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, (uint8_t) ch);
+..\..\arch_STM32103\src\uart.c(100): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(100): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(106): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(106): error:  #20: identifier "USART_IT_RXNE" is undefined
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(109): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                shell_rcv_char(USART_ReceiveData(USART1));      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 143 Error(s), 132 Warning(s).
+Target not created.
+atus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(51): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(63): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(63): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(64): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+        return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(69): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(69): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(70): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, ch);
+..\..\arch_STM32103\src\uart.c(72): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c(98): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, (uint8_t) ch);
+..\..\arch_STM32103\src\uart.c(100): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(100): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(106): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(106): error:  #20: identifier "USART_IT_RXNE" is undefined
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(109): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                shell_rcv_char(USART_ReceiveData(USART1));      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 150 Error(s), 144 Warning(s).
+Target not created.
+ly) {
+..\..\arch_STM32103\src\uart.c(51): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(63): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(63): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(64): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+        return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(69): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(69): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(70): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, ch);
+..\..\arch_STM32103\src\uart.c(72): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c(98): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, (uint8_t) ch);
+..\..\arch_STM32103\src\uart.c(100): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(100): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(106): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(106): error:  #20: identifier "USART_IT_RXNE" is undefined
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(109): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                shell_rcv_char(USART_ReceiveData(USART1));      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 169 Error(s), 145 Warning(s).
+Target not created.
+(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(38): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(39): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1,data);
+..\..\arch_STM32103\src\uart.c(47): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(47): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while((USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET) && dly) {
+..\..\arch_STM32103\src\uart.c(51): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(63): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(63): error:  #20: identifier "USART_FLAG_RXNE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_RXNE) == RESET);
+..\..\arch_STM32103\src\uart.c(64): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+        return USART_ReceiveData(USART1);
+..\..\arch_STM32103\src\uart.c(69): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(69): error:  #20: identifier "USART_FLAG_TXE" is undefined
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+..\..\arch_STM32103\src\uart.c(70): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, ch);
+..\..\arch_STM32103\src\uart.c(72): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(94): error:  #20: identifier "FILE" is undefined
+  PUTCHAR_PROTOTYPE
+..\..\arch_STM32103\src\uart.c(98): warning:  #223-D: function "USART_SendData" declared implicitly
+        USART_SendData(USART1, (uint8_t) ch);
+..\..\arch_STM32103\src\uart.c(100): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(100): error:  #20: identifier "USART_FLAG_TC" is undefined
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+..\..\arch_STM32103\src\uart.c(106): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(106): error:  #20: identifier "USART_IT_RXNE" is undefined
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+..\..\arch_STM32103\src\uart.c(109): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+                shell_rcv_char(USART_ReceiveData(USART1));      
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+".\Objects\E457_STM32F205.axf" - 197 Error(s), 138 Warning(s).
+Target not created.
+  
+..\..\arch_STM32103\src\uart.c(110): warning:  #223-D: function "USART_ClearITPendingBit" declared implicitly
+                USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+..\..\arch_STM32103\src\uart.c: 20 warnings, 13 errors
+compiling misc.c...
+..\..\arch_STM32103\lib\src\misc.c(121): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+..\..\arch_STM32103\lib\src\misc.c(141): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+..\..\arch_STM32103\lib\src\misc.c(183): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+..\..\arch_STM32103\lib\src\misc.c(202): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_LP(LowPowerMode));
+..\..\arch_STM32103\lib\src\misc.c(226): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+..\..\arch_STM32103\lib\src\misc.c: 5 warnings, 0 errors
+compiling stm32f2xx_adc.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(239): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(344): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_MODE(ADC_CommonInitStruct->ADC_Mode));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(401): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(460): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(489): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(530): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(594): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(616): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(718): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(837): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(852): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(881): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(906): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(935): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(964): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(987): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1057): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1081): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1108): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1196): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1260): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1294): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1332): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1366): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1386): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1400): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1428): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1454): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1484): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1591): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1628): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1662): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1686): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c(1725): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_ADC_ALL_PERIPH(ADCx));
+..\..\arch_STM32103\lib\src\stm32f2xx_adc.c: 34 warnings, 0 errors
+compiling stm32f2xx_can.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(171): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(203): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(339): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_FILTER_NUMBER(CAN_FilterInitStruct->CAN_FilterNumber));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(472): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_BANKNUMBER(CAN_BankNumber));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(497): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(527): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(582): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(655): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(707): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(754): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(803): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(827): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(881): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(959): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(985): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1046): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1071): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1091): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1296): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1338): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1437): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1497): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c(1600): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CAN_ALL_PERIPH(CANx));
+..\..\arch_STM32103\lib\src\stm32f2xx_can.c: 23 warnings, 0 errors
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(240): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CRYP_ALGOMODE(CRYP_InitStruct->CRYP_AlgoMode));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(379): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(621): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CRYP_DMAREQ(CRYP_DMAReq));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(746): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CRYP_CONFIG_IT(CRYP_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(775): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CRYP_GET_IT(CRYP_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c(811): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_CRYP_GET_FLAG(CRYP_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_cryp.c: 6 warnings, 0 errors
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(204): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_TRIGGER(DAC_InitStruct->DAC_Trigger));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(262): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(290): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(314): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(345): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(376): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_ALIGN(DAC_Align));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(401): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_ALIGN(DAC_Align));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(429): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_ALIGN(DAC_Align));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(463): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(506): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(554): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(587): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(621): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(647): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c(684): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DAC_CHANNEL(DAC_Channel));
+..\..\arch_STM32103\lib\src\stm32f2xx_dac.c: 15 warnings, 0 errors
+compiling stm32f2xx_dbgmcu.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_dbgmcu.c(87): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DBGMCU_PERIPH(DBGMCU_Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_dbgmcu.c(126): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DBGMCU_APB1PERIPH(DBGMCU_Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_dbgmcu.c(155): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DBGMCU_APB2PERIPH(DBGMCU_Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_dbgmcu.c: 3 warnings, 0 errors
+compiling stm32f2xx_dcmi.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(150): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DCMI_CAPTURE_MODE(DCMI_InitStruct->DCMI_CaptureMode));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(228): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(266): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(304): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(327): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(382): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DCMI_CONFIG_IT(DCMI_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(422): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DCMI_GET_FLAG(DCMI_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(466): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DCMI_CLEAR_FLAG(DCMI_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c(491): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DCMI_GET_IT(DCMI_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_dcmi.c: 9 warnings, 0 errors
+compiling stm32f2xx_dma.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(197): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(322): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(479): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(515): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(551): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(635): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(650): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(728): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(758): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(800): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(827): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(936): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(970): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(999): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(1064): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(1109): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(1165): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c(1245): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+..\..\arch_STM32103\lib\src\stm32f2xx_dma.c: 18 warnings, 0 errors
+compiling stm32f2xx_exti.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(130): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_MODE(EXTI_InitStruct->EXTI_Mode));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(199): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_LINE(EXTI_Line));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(230): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(252): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_LINE(EXTI_Line));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(268): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c(291): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_LINE(EXTI_Line));
+..\..\arch_STM32103\lib\src\stm32f2xx_exti.c: 6 warnings, 0 errors
+compiling stm32f2xx_flash.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(173): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(188): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(210): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(231): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(351): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_SECTOR(FLASH_Sector));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(417): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_VOLTAGERANGE(VoltageRange));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(468): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(506): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(544): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(582): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(698): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_WRP(OB_WRP));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(733): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_RDP(OB_RDP));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(766): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(796): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_BOR(OB_BOR));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(910): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_IT(FLASH_IT)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(942): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c(971): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_flash.c: 17 warnings, 0 errors
+compiling stm32f2xx_fsmc.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(124): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(151): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NORSRAM_BANK(FSMC_NORSRAMInitStruct->FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(275): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(347): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(380): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param( IS_FSMC_NAND_BANK(FSMC_NANDInitStruct->FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(471): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(511): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(632): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_WAIT_FEATURE(FSMC_PCCARDInitStruct->FSMC_Waitfeature));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(709): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(756): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(820): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(867): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(905): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c(953): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+..\..\arch_STM32103\lib\src\stm32f2xx_fsmc.c: 14 warnings, 0 errors
+compiling stm32f2xx_gpio.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(129): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(193): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(266): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(310): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(332): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(349): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(371): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(389): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(408): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(428): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(451): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(465): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c(540): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_gpio.c: 13 warnings, 0 errors
+compiling stm32f2xx_hash.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(200): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_ALGOSELECTION(HASH_InitStruct->HASH_AlgoSelection));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(300): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_VALIDBITSNUMBER(ValidNumber));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(469): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(564): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_IT(HASH_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(596): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_GET_FLAG(HASH_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(634): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_CLEAR_FLAG(HASH_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(653): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_GET_IT(HASH_IT));  
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c(684): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_HASH_IT(HASH_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_hash.c: 8 warnings, 0 errors
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(141): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(188): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(317): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(341): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(365): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(393): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(420): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(445): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(470): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(494): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(520): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(544): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(570): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(608): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(636): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(660): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(698): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(711): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(742): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(773): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(797): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(819): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(852): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(876): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1016): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1041): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1104): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1151): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1206): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1281): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1317): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c(1375): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+..\..\arch_STM32103\lib\src\stm32f2xx_i2c.c: 32 warnings, 0 errors
+compiling stm32f2xx_iwdg.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_iwdg.c(138): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_IWDG_WRITE_ACCESS(IWDG_WriteAccess));
+..\..\arch_STM32103\lib\src\stm32f2xx_iwdg.c(158): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_IWDG_PRESCALER(IWDG_Prescaler));
+..\..\arch_STM32103\lib\src\stm32f2xx_iwdg.c(171): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_IWDG_RELOAD(Reload));
+..\..\arch_STM32103\lib\src\stm32f2xx_iwdg.c(240): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_IWDG_FLAG(IWDG_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_iwdg.c: 4 warnings, 0 errors
+compiling stm32f2xx_pwr.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(139): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(189): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_PWR_PVD_LEVEL(PWR_PVDLevel));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(212): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(246): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(294): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(329): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(471): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_PWR_REGULATOR(PWR_Regulator));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(574): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c(599): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_PWR_CLEAR_FLAG(PWR_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_pwr.c: 9 warnings, 0 errors
+compiling stm32f2xx_rcc.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(246): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_HSE(RCC_HSE));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(302): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(337): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(362): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_LSE(RCC_LSE));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(402): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(445): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(468): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(495): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLI2SN_VALUE(PLLI2SN));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(511): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(529): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(556): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_MCO1SOURCE(RCC_MCO1Source));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(594): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_MCO2SOURCE(RCC_MCO2Source));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(699): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(752): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(784): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PCLK(RCC_HCLK));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(815): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PCLK(RCC_HCLK));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(992): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1022): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1039): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1059): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_I2SCLK_SOURCE(RCC_I2SCLKSource));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1097): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_CLOCK_PERIPH(RCC_AHB1Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1129): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1156): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));  
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1206): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));  
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1246): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1285): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_RESET_PERIPH(RCC_AHB1Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1314): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1338): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1385): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1421): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_RESET_PERIPH(RCC_APB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1467): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_LPMODE_PERIPH(RCC_AHB1Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1499): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1526): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1576): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1616): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1661): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_IT(RCC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1701): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_FLAG(RCC_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1763): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_GET_IT(RCC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c(1794): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_CLEAR_IT(RCC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rcc.c: 39 warnings, 0 errors
+compiling stm32f2xx_rng.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(118): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(277): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(304): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RNG_GET_FLAG(RNG_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(336): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RNG_CLEAR_FLAG(RNG_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(353): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RNG_GET_IT(RNG_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c(382): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RNG_IT(RNG_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rng.c: 6 warnings, 0 errors
+compiling stm32f2xx_rtc.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(435): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_HOUR_FORMAT(RTC_InitStruct->RTC_HourFormat));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(501): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(640): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(712): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(826): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(865): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(966): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1026): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1167): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1223): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_CMD_ALARM(RTC_Alarm));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1300): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_WAKEUP_CLOCK(RTC_WakeUpClock));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1327): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_WAKEUP_COUNTER(RTC_WakeUpCounter));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1364): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1437): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_DAYLIGHT_SAVING(RTC_DayLightSaving));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1503): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_OUTPUT(RTC_Output));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1559): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_CALIB_SIGN(RTC_CalibSign));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1600): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1644): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1701): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_TIMESTAMP_EDGE(RTC_TimeStampEdge));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1746): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_FORMAT(RTC_Format));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1809): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_TAMPER(RTC_Tamper)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1835): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_TAMPER(RTC_Tamper));  
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1879): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_BKP(RTC_BKP_DR));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1900): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_BKP(RTC_BKP_DR));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1938): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_TAMPER_PIN(RTC_TamperPin));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1955): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_TIMESTAMP_PIN(RTC_TimeStampPin));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(1974): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_OUTPUT_TYPE(RTC_OutputType));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(2045): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_CONFIG_IT(RTC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(2094): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_GET_FLAG(RTC_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(2127): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_CLEAR_FLAG(RTC_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(2150): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_GET_IT(RTC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c(2189): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RTC_CLEAR_IT(RTC_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_rtc.c: 32 warnings, 0 errors
+compiling stm32f2xx_sdio.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(283): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_CLOCK_EDGE(SDIO_InitStruct->SDIO_ClockEdge));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(336): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(352): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_POWER_STATE(SDIO_PowerState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(403): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_CMD_INDEX(SDIO_CmdInitStruct->SDIO_CmdIndex));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(469): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_RESP(SDIO_RESP));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(507): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_DATA_LENGTH(SDIO_DataInitStruct->SDIO_DataLength));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(621): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(635): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(651): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_READWAIT_MODE(SDIO_ReadWaitMode));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(665): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(679): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(711): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(725): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(739): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(771): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(829): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_IT(SDIO_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(879): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_FLAG(SDIO_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(914): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_CLEAR_FLAG(SDIO_FLAG));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(955): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_GET_IT(SDIO_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c(989): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SDIO_CLEAR_IT(SDIO_IT));
+..\..\arch_STM32103\lib\src\stm32f2xx_sdio.c: 20 warnings, 0 errors
+compiling stm32f2xx_spi.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(180): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(221): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(289): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_23_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(472): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(496): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_23_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(523): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(543): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(569): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(593): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(624): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(675): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(691): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(780): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(802): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(821): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(845): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(882): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(993): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1036): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1076): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1104): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1157): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c: 22 warnings, 0 errors
+compiling stm32f2xx_syscfg.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(118): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_MEMORY_REMAP_CONFING(SYSCFG_MemoryRemap));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(137): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_PORT_SOURCE(EXTI_PortSourceGPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(155): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_ETH_MEDIA_INTERFACE(SYSCFG_ETH_MediaInterface)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(173): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c: 4 warnings, 0 errors
+compiling stm32f2xx_tim.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(203): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(293): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(363): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(388): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(412): warning:  #223-D: function "assert_param" declared implicitly
+     assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(427): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(441): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(455): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(471): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(500): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(525): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(552): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(575): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(595): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(676): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(757): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(838): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(918): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1018): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1061): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1077): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1092): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1107): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1127): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1156): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1184): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1213): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1241): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1271): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1300): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1329): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1358): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1389): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1419): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1449): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1479): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1509): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1538): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1567): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1596): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1622): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1650): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1677): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1704): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1731): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1758): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1789): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1819): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1899): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));   
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1977): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2031): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2046): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2060): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2074): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2094): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2119): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2143): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2167): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2220): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2264): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2289): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2314): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2371): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2409): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2443): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2484): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2514): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2553): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2590): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2617): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2643): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2682): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2703): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2734): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2776): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2821): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2890): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2931): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2955): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2978): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3011): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3071): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3118): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3169): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c: 84 warnings, 0 errors
+compiling stm32f2xx_usart.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(187): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(241): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(370): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(417): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(443): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(464): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(490): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(547): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(563): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(614): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(634): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(661): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(730): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(748): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(772): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(825): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(910): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(929): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(954): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1025): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1043): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1089): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1219): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1282): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1330): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1366): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1439): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c: 27 warnings, 0 errors
+compiling stm32f2xx_wwdg.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(160): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_PRESCALER(WWDG_Prescaler));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(180): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_WINDOW_VALUE(WindowValue));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(213): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_COUNTER(Counter));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(244): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_COUNTER(Counter));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c: 4 warnings, 0 errors
+".\Objects\E457_STM32F205.axf" - 197 Error(s), 594 Warning(s).
+Target not created.
+licitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(221): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(289): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_23_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(472): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(496): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_23_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(523): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(543): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(569): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(593): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(624): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(675): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(691): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(780): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(802): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(821): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(845): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(882): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(993): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1036): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1076): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1104): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c(1157): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\..\arch_STM32103\lib\src\stm32f2xx_spi.c: 22 warnings, 0 errors
+compiling stm32f2xx_syscfg.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(118): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_MEMORY_REMAP_CONFING(SYSCFG_MemoryRemap));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(137): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_PORT_SOURCE(EXTI_PortSourceGPIOx));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(155): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_ETH_MEDIA_INTERFACE(SYSCFG_ETH_MediaInterface)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c(173): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+..\..\arch_STM32103\lib\src\stm32f2xx_syscfg.c: 4 warnings, 0 errors
+compiling stm32f2xx_tim.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(203): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(293): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(363): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(388): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(412): warning:  #223-D: function "assert_param" declared implicitly
+     assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(427): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(441): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(455): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(471): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(500): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(525): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(552): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(575): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(595): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(676): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(757): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(838): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(918): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1018): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1061): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1077): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1092): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1107): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1127): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1156): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1184): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1213): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1241): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1271): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1300): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1329): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1358): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1389): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1419): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1449): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1479): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1509): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1538): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1567): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1596): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1622): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1650): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1677): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1704): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1731): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1758): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1789): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1819): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1899): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));   
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(1977): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2031): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2046): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2060): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2074): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2094): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2119): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2143): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2167): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2220): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2264): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2289): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2314): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2371): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2409): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2443): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2484): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2514): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2553): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2590): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2617): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2643): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2682): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2703): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2734): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2776): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2821): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2890): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2931): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2955): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(2978): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3011): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3071): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3118): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c(3169): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+..\..\arch_STM32103\lib\src\stm32f2xx_tim.c: 84 warnings, 0 errors
+compiling stm32f2xx_usart.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(187): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(241): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(370): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(417): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(443): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(464): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(490): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(547): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(563): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(614): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(634): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(661): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(730): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(748): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(772): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(825): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(910): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(929): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(954): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx)); 
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1025): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1043): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1089): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1219): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1282): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1330): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1366): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c(1439): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\..\arch_STM32103\lib\src\stm32f2xx_usart.c: 27 warnings, 0 errors
+compiling stm32f2xx_wwdg.c...
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(160): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_PRESCALER(WWDG_Prescaler));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(180): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_WINDOW_VALUE(WindowValue));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(213): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_COUNTER(Counter));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c(244): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_WWDG_COUNTER(Counter));
+..\..\arch_STM32103\lib\src\stm32f2xx_wwdg.c: 4 warnings, 0 errors
+assembling startup_stm32f2xx.s...
+".\Objects\E457_STM32F205.axf" - 207 Error(s), 716 Warning(s).
+Target not created.

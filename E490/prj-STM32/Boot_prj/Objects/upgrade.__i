@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I C:\Keil_v5\ARM\Pack\Keil\STM32F2xx_DFP\2.9.0\Drivers\CMSIS\Include -I ..\..\arch_STM32103\inc -I ..\..\core\inc -I ..\..\arch_STM32103\lib\inc
+-ID:\keilpacks\Keil\STM32F2xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include
+-ID:\keilpacks\Keil\STM32F2xx_DFP\2.9.0
+-D__UVISION_VERSION="536" -DSTM32F205xx -DSUPPORT_1S -DSTM32_BOARD
+-o .\objects\upgrade.o --omf_browse .\objects\upgrade.crf --depend .\objects\upgrade.d "..\..\arch_STM32103\src_boot\upgrade.c"

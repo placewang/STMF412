@@ -1,0 +1,190 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: h lc, zhhq, LIC=RC9PC-728VR-1PFZ5-GXLFF-KPD1P-R1ZZE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+E:\work\HJ_head_E475_STM32F205\prj-STM32\Boot_prj\E457_stm32f205_boot.uvprojx
+Project File Date:  07/29/2015
+
+<h2>Output:</h2>
+Rebuild target 'boot_E480_stm32f2'
+compiling dprintf.c...
+compiling time.c...
+..\..\arch_STM32103\inc\Platform_config.h(534): warning:  #47-D: incompatible redefinition of macro "STEP_NUM" (declared at line 145)
+  #define STEP_NUM                      12
+..\..\arch_STM32103\src\time.c(11): warning:  #1295-D: Deprecated declaration TimeStart - give arg types
+  void TimeStart();
+..\..\arch_STM32103\src\time.c(12): warning:  #1295-D: Deprecated declaration TimeGet - give arg types
+  unsigned long TimeGet();
+..\..\arch_STM32103\src\time.c(18): warning:  #177-D: variable "capture" was declared but never referenced
+        unsigned long capture;
+..\..\arch_STM32103\src\time.c(53): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(123): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+        TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\..\arch_STM32103\src\time.c(345): warning:  #177-D: variable "is2ms" was declared but never referenced
+        static u16 is2ms =0;
+..\..\arch_STM32103\src\time.c(346): warning:  #177-D: variable "capture" was declared but never referenced
+        u16 capture = 0;
+..\..\arch_STM32103\src\time.c(362): warning:  #223-D: function "hook_time_50us" declared implicitly
+                hook_time_50us();               
+..\..\arch_STM32103\src\time.c(367): warning:  #1295-D: Deprecated declaration EXTI_CHECK_iscomming - give arg types
+  extern void EXTI_CHECK_iscomming();
+..\..\arch_STM32103\src\time.c: 10 warnings, 0 errors
+compiling uart.c...
+compiling gpio.c...
+..\..\arch_STM32103\inc\platform_config.h(534): warning:  #47-D: incompatible redefinition of macro "STEP_NUM" (declared at line 145)
+  #define STEP_NUM                      12
+..\..\arch_STM32103\src\gpio.c: 1 warning, 0 errors
+compiling fsmc.c...
+compiling eeprom.c...
+..\..\arch_STM32103\src\eeprom.c(577): warning:  #550-D: variable "OldPageAddress" was set but never used
+        u32 NewPageAddress = 0x080103FF, OldPageAddress = 0x08010000;
+..\..\arch_STM32103\src\eeprom.c: 1 warning, 0 errors
+compiling can.c...
+..\..\arch_STM32103\src_boot\can.c(53): warning:  #223-D: function "arch_Set_CANID" declared implicitly
+        CAN_FilterInitStructure.CAN_FilterIdHigh=arch_Set_CANID(0)<<5;
+..\..\arch_STM32103\src_boot\can.c(86): warning:  #550-D: variable "idx" was set but never used
+        unsigned int idx;
+..\..\arch_STM32103\src_boot\can.c: 2 warnings, 0 errors
+compiling stm32f2xx_it.c...
+..\..\arch_STM32103\inc\platform_config.h(534): warning:  #47-D: incompatible redefinition of macro "STEP_NUM" (declared at line 145)
+  #define STEP_NUM                      12
+..\..\arch_STM32103\src_boot\stm32f2xx_it.c: 1 warning, 0 errors
+compiling arch_stm32.c...
+..\..\arch_STM32103\inc\platform_config.h(534): warning:  #47-D: incompatible redefinition of macro "STEP_NUM" (declared at line 145)
+  #define STEP_NUM                      12
+..\..\arch_STM32103\src_boot\arch_stm32.c(46): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  void myprintf();
+..\..\arch_STM32103\src_boot\arch_stm32.c(303): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\arch_STM32103\src_boot\arch_stm32.c(529): warning:  #223-D: function "delay" declared implicitly
+        delay(10);
+..\..\arch_STM32103\src_boot\arch_stm32.c(557): warning:  #223-D: function "delay" declared implicitly
+        delay(10);
+..\..\arch_STM32103\src_boot\arch_stm32.c(575): warning:  #223-D: function "GPIO_Configuration_8844RESET" declared implicitly
+        GPIO_Configuration_8844RESET();
+..\..\arch_STM32103\src_boot\arch_stm32.c(579): warning:  #223-D: function "GPIO_Configuration_powerctr" declared implicitly
+        GPIO_Configuration_powerctr();
+..\..\arch_STM32103\src_boot\arch_stm32.c: 7 warnings, 0 errors
+compiling upgrade.c...
+..\..\arch_STM32103\src_boot\upgrade.c(178): warning:  #223-D: function "myprintf" declared implicitly
+                dprintf("[%lx]: [%lX] <=> [%lX]\r\n", i, *(pData0 + i), *(pData1 + i));
+..\..\arch_STM32103\src_boot\upgrade.c: 1 warning, 0 errors
+compiling boot.c...
+..\..\arch_STM32103\inc\upgrade.h(12): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Start - give arg types
+  void arch_Upgrade_Set_Start();
+..\..\arch_STM32103\inc\upgrade.h(13): warning:  #1295-D: Deprecated declaration arch_Upgrade_is_Start - give arg types
+  int arch_Upgrade_is_Start();
+..\..\arch_STM32103\inc\upgrade.h(14): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Receive - give arg types
+  void arch_Upgrade_Set_Receive();
+..\..\arch_STM32103\inc\upgrade.h(16): warning:  #1295-D: Deprecated declaration arch_Upgrade_Get_Burn_Size - give arg types
+  DWORD arch_Upgrade_Get_Burn_Size();
+..\..\arch_STM32103\inc\upgrade.h(17): warning:  #1295-D: Deprecated declaration arch_Upgrade_Set_Burn - give arg types
+  void arch_Upgrade_Set_Burn();
+..\..\arch_STM32103\inc\upgrade.h(18): warning:  #1295-D: Deprecated declaration arch_Upgrade_is_Burn - give arg types
+  int arch_Upgrade_is_Burn();
+..\..\arch_STM32103\inc\upgrade.h(19): warning:  #1295-D: Deprecated declaration arch_Upgrade_Finish - give arg types
+  void arch_Upgrade_Finish();
+..\..\core\src\boot.c(16): warning:  #1295-D: Deprecated declaration myprintf - give arg types
+  int myprintf();
+..\..\core\src\boot.c: 8 warnings, 0 errors
+compiling misc.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+compiling stm32f2xx_fsmc.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_hash.c...
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+compiling system_stm32f2xx.c...
+assembling startup_stm32f2xx.s...
+linking...
+Program Size: Code=22360 RO-data=420 RW-data=116 ZI-data=10524  
+FromELF: creating hex file...
+".\Objects\E480_stm32f205_boot.axf" - 0 Error(s), 31 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\work\HJ_head_E475_STM32F205\prj-STM32\Boot_prj\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.3.0
+
+<h2>Collection of Component Files used:</h2>
+Load "E:\\work\\HJ_head_E475_STM32F205\\prj-STM32\\Boot_prj\\Objects\\E480_stm32f205_boot.axf" 
+* JLink Info: Device "STM32F205ZE" selected (512 KB flash, 128 KB RAM).
+Set JLink Project File to "E:\work\HJ_head_E475_STM32F205\prj-STM32\Boot_prj\JLinkSettings.ini"
+* JLink Info: Device "STM32F205ZE" selected (512 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.90 , compiled Jul 28 2014 10:35:20
+Firmware: J-Link ARM V8 compiled Dec  6 2011 18:57:44
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F205ZETx
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>

@@ -1,0 +1,5 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-ID:\keilpacks\Keil\STM32F2xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include
+-ID:\keilpacks\Keil\STM32F2xx_DFP\2.9.0
+--pd "__UVISION_VERSION SETA 536" --pd "STM32F205xx SETA 1"
+--list .\listings\startup_stm32f2xx.lst --xref -o .\objects\startup_stm32f2xx.o --depend .\objects\startup_stm32f2xx.d "..\..\arch_STM32103\lib\startup\MDK\startup_stm32f2xx.s"

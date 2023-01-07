@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\Pack\Keil\STM32F2xx_DFP\2.3.0\Drivers\CMSIS\Include -I..\..\arch_STM32103\inc -I..\..\core\inc -I..\..\arch_STM32103\lib\inc
+-I E:\work\HJ_Head_new1sys_Stm32F205\prj-STM32\MDK_prj\RTE
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.3.0
+-I C:\Keil_v5\ARM\CMSIS\Include
+-DSTM32F205xx -DSUPPORT_1S -DSTM32_BOARD
+-o .\objects\iwdg.o --omf_browse .\objects\iwdg.crf --depend .\objects\iwdg.d --feedback ".\Objects\E457_STM32F205.fed" "..\..\arch_STM32103\src\iwdg.c"

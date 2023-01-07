@@ -1,0 +1,9 @@
+.\objects\massage.o: ..\..\core\src\massage.c
+.\objects\massage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\massage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\massage.o: ..\..\core\inc\type.h
+.\objects\massage.o: ..\..\core\inc\massage.h
+.\objects\massage.o: ..\..\core\inc\alert.h
+.\objects\massage.o: ..\..\core\inc\config.h
+.\objects\massage.o: ..\..\core\inc\arch.h
+.\objects\massage.o: ..\..\core\inc\command.h
