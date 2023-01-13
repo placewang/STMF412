@@ -32,7 +32,7 @@ signed char CanDataOutTeamElectricMagnet(QUEUE_DATA_T *DCT)
 			data[0]=0x08;
             data[1]=0x0a;
             data[4]=0x0a;
-            CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+            CAN1_Send_Msg(data,8,arch_GetBoardID());
 	   } 
        //取机头程序版本号
  	   else if(DCT->RxData[0]==0x08&&DCT->RxData[1]==0x01)
@@ -44,7 +44,7 @@ signed char CanDataOutTeamElectricMagnet(QUEUE_DATA_T *DCT)
  			data[3]=0x1d;
             data[4]=0x63;
             data[6]=0x01;          
-            CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+            CAN1_Send_Msg(data,8,arch_GetBoardID());
 	   } 
  	   else if(DCT->RxData[0]==0x08&&DCT->RxData[1]==0x14&&DCT->RxData[2]==0x00)
 	   {
@@ -52,7 +52,7 @@ signed char CanDataOutTeamElectricMagnet(QUEUE_DATA_T *DCT)
 			data[0]=0x08;
             data[1]=0x14;
             data[4]=0x01;
-            CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+            CAN1_Send_Msg(data,8,arch_GetBoardID());
        }           
 		//机头重启
 		else if(DCT->RxData[0]==0x08&&DCT->RxData[1]<=0x06)

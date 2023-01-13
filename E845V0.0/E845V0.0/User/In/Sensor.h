@@ -7,7 +7,7 @@
 
 #ifndef __SENSOR__H
 #define __SENSOR__H
-
+#include "CanApp.h"
 /*
 System One(A)
 */
@@ -54,9 +54,9 @@ System One(A)
 #define PROBE_B_PORT      GPIOC       //探针输入端口
 
 #define MOTOR_B_QSJ_ZEROSTATE()   HAL_GPIO_ReadPin(MOTOR_B_QSJ_PORT,MOTOR_B_QSJ_PIN)
-#define MOTOR_B_QDM_ZEROSTATE() 	HAL_GPIO_ReadPin(MOTOR_B_QDM_PORT,MOTOR_B_QDM_PIN)
+#define MOTOR_B_QDM_ZEROSTATE()   HAL_GPIO_ReadPin(MOTOR_B_QDM_PORT,MOTOR_B_QDM_PIN)
 #define MOTOR_B_HSJ_ZEROSTATE()   HAL_GPIO_ReadPin(MOTOR_B_HSJ_PORT,MOTOR_B_HSJ_PIN)
-#define MOTOR_B_HDM_ZEROSTATE()		HAL_GPIO_ReadPin(MOTOR_B_HDM_PORT,MOTOR_B_HDM_PIN)
+#define MOTOR_B_HDM_ZEROSTATE()	  HAL_GPIO_ReadPin(MOTOR_B_HDM_PORT,MOTOR_B_HDM_PIN)
 
 #define PROBEINPUT_B_STATE()      HAL_GPIO_ReadPin(PROBE_B_PORT,PROBE_B_PIN)
 
@@ -78,11 +78,26 @@ System One(A)
 #define  OVERCURRENT_PIN  GPIO_PIN_5
 #define  OVERCURRENT_PROT GPIOC
 
-#define  SZ_OVERCURRENT_STATE() HAL_GPIO_ReadPin(OVERCURRENT_PROT,OVERCURRENT_PIN);
+#define  SZ_OVERCURRENT_STATE() HAL_GPIO_ReadPin(OVERCURRENT_PROT,OVERCURRENT_PIN)
+
+typedef struct
+{
+ 
+    unsigned short DM_Sensorstate;     //度目电机零位传感器状态
+    unsigned short DM_LastSensorstate; //度目电机零位传感器上一次状态
+    
+}MotorSersor;
+
+
+
+extern  MotorSersor   MotorSensorState;                          //电机传感器状态
 
 
 unsigned int arch_GetBoardID(void);
 
+
+void MotorSensorStateLoad(MotorSersor  *Ms);
+signed char MotorSensorRequestReturnOperation(MotorSersor  *Mrro,CmdFlag *Mcmd);
 #endif
 
 

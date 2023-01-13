@@ -30,6 +30,7 @@
 #include "queue.h"
 #include "stmflash.h"
 #include "Upgrade.h"
+
 //#include "SolenoidValve.h"
 //#include "ADCVoltage.h"
 //#include "SenSor.h"
@@ -100,7 +101,7 @@ int main(void)
   MX_GPIO_Init();
   MX_IWDG_Init();
   MX_CAN1_Init();
-  HAL_Delay(500); 
+  HAL_Delay(100); 
   /* USER CODE BEGIN 2 */
 
 

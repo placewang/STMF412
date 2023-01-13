@@ -8,7 +8,20 @@
 #include "CanApp.h"
 #include "SolenoidValve.h"
 #include "ElectricMagnetApp.h"
+#include "queue.h"
+#include "SenSor.h"
+/*
 
+电磁铁相关参数初始化
+
+*/
+
+void ElectricMagnetInit(void)
+{
+    SZ_PowerTime.OUTKeepTime=SOLENIDVALVETIMINGOPERATION;
+    SZ_PowerTime.INKeepTime= SOLENIDVALVETIMINGOPERATION; 
+    SZ_PowerTime.SwitchState=0xff;    
+}
 /*
 电磁铁电源开关操作
 	PS:协议命令缓存体
@@ -55,6 +68,7 @@ signed char ElectricMagnetONOrOFFTask(CmdFlag *Emof,SZPowerOnTime *SZpt)
 */
 signed char ElectricalResistanceTestTask(CmdFlag *Ertt,SZ_MeasuringResistance *Szcr)
 {
+    unsigned char MsData[8]={0x05,0x06,0x00};	
 	if(Ertt->TestResistanceMask==1)
 	{
 		Szcr->MeasureMarkPosition[Ertt->TestResistanceNum]=1;			
@@ -62,7 +76,10 @@ signed char ElectricalResistanceTestTask(CmdFlag *Ertt,SZ_MeasuringResistance *S
 	}
 	else if(Ertt->ResistanceValRequestMask==1)
 	{
-		
+        MsData[3]=Ertt->ResistanceValRequesttNum;
+        MsData[4]=(unsigned char)(Szcr->LastCoilResistanceValue[Ertt->ResistanceValRequesttNum]&0xff);    
+        MsData[5]|=(unsigned char)Szcr->LastCoilResistanceValue[Ertt->ResistanceValRequesttNum]>>8; 
+        CAN1_Send_Msg(MsData,8,arch_GetBoardID());		
 		Ertt->ResistanceValRequestMask=0;
 	}
 		

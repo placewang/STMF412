@@ -41,3 +41,5 @@ e845v0.0\canapp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 e845v0.0\canapp.o: ../User/In/SenSor.h
 e845v0.0\canapp.o: ../User/In/stmflash.h
 e845v0.0\canapp.o: D:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+e845v0.0\canapp.o: ../User/In/Alarm.h
+e845v0.0\canapp.o: ../User/In/SolenoidValve.h

@@ -19,10 +19,19 @@
 unsigned int arch_GetBoardID(void)
 {
 	unsigned int ret = 0;
-//	ret= SYSTEMID0_STATE();
-//	ret |=(SYSTEMID1_STATE()<<1);
-	return (ret+1);
+	ret= SYSTEMID0_STATE();
+	ret |=(SYSTEMID1_STATE()<<1);
+    switch(ret)
+    {
+        case 0x03:
+           ret=0x733; 
+           break;
+        default:
+            break;
+    }
+	return ret;
 }
+
 
 
 

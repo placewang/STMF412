@@ -28,7 +28,7 @@ unsigned short Get_Adc_Hadc1(unsigned int ch)
 	
   HAL_ADC_Start(&hadc1);                                //开启ADC
   HAL_ADC_PollForConversion(&hadc1,SZ_SAMPINGTIME);     //轮询转换(阻塞)
-	return (unsigned short)HAL_ADC_GetValue(&hadc1);
+  return (unsigned short)HAL_ADC_GetValue(&hadc1);
 }
 
 /*

@@ -38,6 +38,7 @@
 "e845v0.0\solenoidvalveio.o"
 "e845v0.0\motorio.o"
 "e845v0.0\stmflash.o"
+"e845v0.0\alarm.o"
 "e845v0.0\canapp.o"
 "e845v0.0\electricmagnetapp.o"
 --library_type=microlib --strict --scatter "E845V0.0\E845V0.sct"

@@ -25,7 +25,7 @@
 #include "queue.h"
 #include "SenSor.h"
 
-volatile unsigned int arch_board_id = 0;      //系统ID缓存
+
 Queue Can1_revQueuebuff;					  //CAN1队列缓存
 QUEUE_DATA_T CAN1Buff[CAN1LEN];				  //CAN1队列数区
 QUEUE_DATA_T CAN1_recDataInfo;                //CAN1接收缓存
@@ -38,7 +38,16 @@ QUEUE_DATA_T CAN1_recDataInfo;                //CAN1接收缓存
 */
 unsigned int arch_Set_CANID(unsigned int isbroadcastID)
 {
+    unsigned int arch_board_id = 0;      
 	arch_board_id=arch_GetBoardID();
+    switch(arch_board_id)
+    {
+        case 0x733:
+          arch_board_id=1;   
+          break;
+        default:
+            break;
+    }     
 	if (isbroadcastID)
 	{
 		return 0x361;
@@ -213,6 +222,7 @@ void CAN1_Send_Msg(unsigned char * dataval,\
 							 const unsigned int    DLC,\
 							 const unsigned int    Dev_num)
 {
+
 	CAN_TxHeaderTypeDef   CAN1_TxHeader;
 	uint32_t              CAN1_TxMailbox;
     CAN1_TxHeader.StdId =Dev_num;        //标准标识
@@ -220,12 +230,14 @@ void CAN1_Send_Msg(unsigned char * dataval,\
     CAN1_TxHeader.RTR = 0;               //数据
     CAN1_TxHeader.DLC =DLC;                
 	CAN1_TxHeader.TransmitGlobalTime = DISABLE;
-    while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan1)==0x00){;}
+
+    while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan1)==0){;}
     if(HAL_CAN_AddTxMessage(&hcan1, &CAN1_TxHeader, dataval, &CAN1_TxMailbox) != HAL_OK)
     {
+           
         Error_Handler();
     }
-    while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan1)!=0x03){;}
+//    while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan1)!=0x03){;}
 }
 /* USER CODE END 1 */
 

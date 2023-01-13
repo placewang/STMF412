@@ -38,3 +38,4 @@ e845v0.0\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 e845v0.0\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 e845v0.0\can.o: ../User/In/queue.h
 e845v0.0\can.o: ../User/In/SenSor.h
+e845v0.0\can.o: ../User/In/CanApp.h

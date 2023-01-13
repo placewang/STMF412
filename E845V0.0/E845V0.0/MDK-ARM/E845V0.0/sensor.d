@@ -1,5 +1,6 @@
 e845v0.0\sensor.o: ..\User\Sensor.c
 e845v0.0\sensor.o: ../User/In/SenSor.h
+e845v0.0\sensor.o: ../User/In/CanApp.h
 e845v0.0\sensor.o: ../Core/Inc/gpio.h
 e845v0.0\sensor.o: ../Core/Inc/main.h
 e845v0.0\sensor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -37,3 +38,6 @@ e845v0.0\sensor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 e845v0.0\sensor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 e845v0.0\sensor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 e845v0.0\sensor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+e845v0.0\sensor.o: D:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+e845v0.0\sensor.o: ../User/In/queue.h
+e845v0.0\sensor.o: ../Core/Inc/can.h

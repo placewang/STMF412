@@ -81,7 +81,7 @@ void ReplyVersionNumber(BootCmdFlag *bot)
     if(bot->CheckBoardVersiontMask==1)
     {
         unsigned char data[8]={0x08,0x02,0x09,0x80,0x63,0x00,0x01,0x00};
-        CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+        CAN1_Send_Msg(data,8,arch_GetBoardID());
         bot->CheckBoardVersiontMask=0;
     }
     //机头重启
@@ -134,7 +134,7 @@ signed RevData(Revbuff *buf,QUEUE_DATA_T *CanDat)
             buf->retry_state=2; 
        }
        data[0]= UPGRADE_DATA_RECEIVED;
-       CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID()));  //回复应答发下一包 
+       CAN1_Send_Msg(data,2,arch_GetBoardID());  //回复应答发下一包 
     }
    return 0;
 }
@@ -155,7 +155,7 @@ signed NormalUpgradeProcess(Revbuff* buff,QUEUE_DATA_T *ndat)
           //发送准备就绪命令修改升级标志
           memset(data, 0x00, 8);
           data[0]=UPGRADE_REQUEST;
-          CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID()));  
+          CAN1_Send_Msg(data,2,arch_GetBoardID());  
           IndividualSectorErasure(BOOT_FLASH_UPGRADE_ADDRESS);
           cmd=CMD_UPGRADE_RCVDATA;
           STMFLASH_Write(BOOT_FLASH_UPGRADE_ADDRESS,&cmd);          
@@ -180,7 +180,7 @@ signed NormalUpgradeProcess(Revbuff* buff,QUEUE_DATA_T *ndat)
                 memset(data, 0x00, 8);
                 data[0]=0x01;
               	data[1]=0x3d;
-                CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID())); 
+                CAN1_Send_Msg(data,2,arch_GetBoardID()); 
                 RestStarMCU();
             }
             break;    
@@ -198,7 +198,7 @@ signed NormalUpgradeProcess(Revbuff* buff,QUEUE_DATA_T *ndat)
                 memset(data, 0x00, 8);
 				data[0]=0x03;
                 data[1]=0x3d;   
-                CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID())); 
+                CAN1_Send_Msg(data,2,arch_GetBoardID()); 
                 HAL_Delay(500);
                 RestStarMCU();
 			}
@@ -213,17 +213,17 @@ signed NormalUpgradeProcess(Revbuff* buff,QUEUE_DATA_T *ndat)
               // 发送0x3e
               memset(data, 0x00, 8); 
               data[0]=UPGRADE_SUCCESS;
-              CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID())); 
+              CAN1_Send_Msg(data,2,arch_GetBoardID()); 
               memset(data, 0x00, 8);
               data[0]=0xf0;
               data[2]=0xc0;    
               data[6]=0xab;
               data[7]=0x01;                
-              CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));  
+              CAN1_Send_Msg(data,8,arch_GetBoardID());  
               memset(data, 0x00, 8);
               data[1]=0x01;
               data[4]=0x01;                
-              CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));   
+              CAN1_Send_Msg(data,8,arch_GetBoardID());   
               HAL_Delay(500);  
               RestStarMCU();
             }           
@@ -313,12 +313,12 @@ void UpgradeTask(void)
             cmd=UpgradeFlagJudgment(BOOT_FLASH_UPGRADE_ADDRESS);
             if(cmd==-1)
             {
-                 CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID()));
+                 CAN1_Send_Msg(data,2,arch_GetBoardID());
                  UpgradeStausTask= UPGRADE_FORCES;
             }
             else if(cmd==2)
             {
-                CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID()));
+                CAN1_Send_Msg(data,2,arch_GetBoardID());
                 GoApp(); 
             }
             else if(cmd==0)
@@ -330,7 +330,7 @@ void UpgradeTask(void)
                //数据搬移阶段外中断，重新拷贝数据直接跳转APP
                 data[0]=0xff;
                 data[1]=0xf5;
-                CAN1_Send_Msg(data,2,(0x732+arch_GetBoardID()));
+                CAN1_Send_Msg(data,2,arch_GetBoardID());
                 Upgrade_cope_flash_to_app();
                 IndividualSectorErasure(BOOT_FLASH_UPGRADE_ADDRESS);
                 ucmd=CMD_UPGRADE_SUCCESS;

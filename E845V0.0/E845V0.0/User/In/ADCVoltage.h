@@ -15,7 +15,7 @@
 #define  SZ_CURRENTSAMPLINGCOUNT                10     //纱嘴电流连续采样次数
 #define  SZ_NOLOADVOLTAGEADCVALUE               1.647  //纱嘴空载ADC输出值
 
-#define  SZ_SAMPINGTIME                         10
+#define  SZ_SAMPINGTIME                         100
 /*
 纱嘴电磁阀
 采样过程参数

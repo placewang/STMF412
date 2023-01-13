@@ -44,7 +44,8 @@ e845v0.0\main.o: ../User/In/Led.h
 e845v0.0\main.o: ../User/In/SolenoidValve.h
 e845v0.0\main.o: ../User/In/ADCVoltage.h
 e845v0.0\main.o: ../User/In/SenSor.h
+e845v0.0\main.o: ../User/In/CanApp.h
 e845v0.0\main.o: ../User/In/MotorCurrent.h
 e845v0.0\main.o: ../User/In/MotorIo.h
 e845v0.0\main.o: ../User/In/ElectricMagnetApp.h
-e845v0.0\main.o: ../User/In/CanApp.h
+e845v0.0\main.o: ../User/In/Alarm.h

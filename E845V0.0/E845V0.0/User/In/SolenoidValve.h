@@ -42,7 +42,7 @@
 
 #define SHAZUI_POWERSWITCH_Port 	GPIOB
 
-#define SOLENIDVALVENUMBER                               6        //电磁阀数量
+#define SOLENIDVALVENUMBER                               8        //电磁阀数量
 #define SOLENIDVALVETIMINGOPERATION                      10*2.5*1   //电磁阀打入打出时间间隔(MS)
  /*
 电磁阀(沙嘴)操作编号
@@ -74,7 +74,12 @@ typedef struct
 	unsigned char  InMark[SOLENIDVALVENUMBER];                           //打入动作标记
 	unsigned char  ActionSwitchFlag_OUT[SOLENIDVALVENUMBER];             //打出任务操作标记
 	unsigned char  ActionSwitchFlag_IN[SOLENIDVALVENUMBER];              //打入任务操作标记
-	unsigned short SV[SOLENIDVALVENUMBER];                               //电磁阀进/出通电时间记录                                                               
+    unsigned char  SwitchState;                                          //电磁铁状态 
+    unsigned char  OvercurrentTiming;                                    //电磁铁过流计时	
+    unsigned short SV[SOLENIDVALVENUMBER];                               //电磁阀进/出通电时间记录        
+    unsigned short INKeepTime;                                           //电磁铁进保持时间  
+    unsigned short OUTKeepTime;                                          //电磁铁出保持时间
+
 }SZPowerOnTime;
 
 /*
@@ -92,7 +97,7 @@ typedef struct
 extern SZPowerOnTime SZ_PowerTime;
 extern SZ_MeasuringResistance  CalculationOfResistance; 
 
-
+void ElectricMagnetInit(void);
 void SolenidValveSetAllIn(void);
 void SolenidValveSetAllOut(void);
 

@@ -10,6 +10,9 @@
 #include "SenSor.h"
 #include "stmflash.h"
 #include "string.h"
+#include "Alarm.h"
+#include "SolenoidValve.h"
+
 CmdFlag  ProtocolCmd = {0};     //协议命令缓存体
 QUEUE_DATA_T CanCmdRevCache;    //CAN命令接收缓存
 
@@ -20,6 +23,7 @@ Parsing task
 */
 signed char CanDataOutTeamElectricMagnet(QUEUE_DATA_T *DCT)
 {
+        unsigned char data[8]={0};  
 	  //电磁铁关
 		if(DCT->RxData[1]==0x01&&DCT->RxData[2]==0x00\
 			&&DCT->RxData[3]<=0x07&&DCT->RxData[4]==0x00&&DCT->RxData[5]==0x00)
@@ -42,17 +46,45 @@ signed char CanDataOutTeamElectricMagnet(QUEUE_DATA_T *DCT)
 			ProtocolCmd.TestResistanceNum=DCT->RxData[3];
 		}
 		//获取某个电磁铁的阻抗值（上一次动作值）
-		else if(DCT->RxData[1]==0x06&&DCT->RxData[2]==0x00\
+		else if(DCT->RxData[1]==0x06&&DCT->RxData[2]==0x00 \
 					 &&DCT->RxData[3]<=0x07)
-	  {
+	    {
 			ProtocolCmd.ResistanceValRequestMask=1;
 			ProtocolCmd.ResistanceValRequesttNum=DCT->RxData[3];
 		}
-		
+        //电磁出保持时间
+        else if(DCT->RxData[1]==0x03&&DCT->RxData[2]!=0x00 \
+                &&DCT->RxData[3]==0x00)
+        {
+           SZ_PowerTime.OUTKeepTime=DCT->RxData[4];
+           SZ_PowerTime.OUTKeepTime|=DCT->RxData[5]<<8; 
+           SZ_PowerTime.OUTKeepTime*=2;//源代码计时时间基准2MS一次中断
+        }            
+        //电磁进保持时间
+        else if(DCT->RxData[1]==0x03&&DCT->RxData[2]!=0x00 \
+                &&DCT->RxData[3]==0x01)
+        {
+           SZ_PowerTime.INKeepTime=DCT->RxData[4];
+           SZ_PowerTime.INKeepTime|=DCT->RxData[5]<<8; 
+           SZ_PowerTime.INKeepTime*=2; 
+        }          
+        // 取状态 
+        else if(DCT->RxData[1]==0x02&&DCT->RxData[2]==0x01)
+        {
+            memset((unsigned char *)data, 0x00, 8);  
+            data[0]=0x05;
+            data[1]=0x02;
+            data[2]=SZ_PowerTime.SwitchState;
+    
+            CAN1_Send_Msg(data,8,arch_GetBoardID());            
+        }
+        
 	return 0;
 }
 /*
 外设命令解析
+ 0x01+0x05+0x02  打开主动上报  
+ 0x01+0x05+0x03  关闭主动上报
 */
 signed CanDataPeripheral(QUEUE_DATA_T *pm)
 {
@@ -68,20 +100,37 @@ signed CanDataPeripheral(QUEUE_DATA_T *pm)
 		{
 			ProtocolCmd.PowerDC24VSwitchMask=2;
 		}
-    return 0;
+        //传感器是否主动上报标记
+        else if(pm->RxData[1]==0x05&&pm->RxData[2]==0x02)        
+        {
+            //开
+            MotorSensorState.DM_LastSensorstate=MotorSensorState.DM_Sensorstate;
+            ProtocolCmd.SersorStateActiveReport=1;
+        }
+        else if(pm->RxData[1]==0x05&&pm->RxData[2]==0x03)        
+        {
+            //关
+            ProtocolCmd.SersorStateActiveReport=0;
+        } 
+        //取电机的零位信号
+        else if(pm->RxData[1]==0x05&&pm->RxData[2]==0x00 \
+                &&pm->RxData[3]==0x00)    
+        {
+           ProtocolCmd.SersorStateMotorZeroPos =1; 
+        }            
+        return 0;
 }
 
 
 /*
 CAN数据出队--电机相关命令解析
 		Mr:协议数据
-CAN协议 主控-->机头板 16进制 0x01+0x05+0x02  打开主动上报  
-							 0x01+0x05+0x03  关闭主动上报
+
 */
 signed char CanDataOutTeamMotor(QUEUE_DATA_T *Mr)
 {
 		unsigned short  sensornumber=0; 
-  	//取单个度目的零位传感器状态
+        //取单个度目的零位传感器状态
 		if(Mr->RxData[1]==0x02&&Mr->RxData[2]==0x00\
 			&&Mr->RxData[3]==0x01)
 		{
@@ -99,7 +148,7 @@ signed char CanDataOutTeamMotor(QUEUE_DATA_T *Mr)
 	  {
 			ProtocolCmd.SersorStateRequestMask=2;
 	  }
-
+      
 	return 0;
 }
 
@@ -119,7 +168,7 @@ signed CanDataSystme(QUEUE_DATA_T *sy)
         data[3]=0x80;
         data[4]=0x63;
         data[6]=0x01;       
-        CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+        CAN1_Send_Msg(data,8,arch_GetBoardID());
     }
     else if(sy->RxData[1]==0x0a)
     {
@@ -127,7 +176,7 @@ signed CanDataSystme(QUEUE_DATA_T *sy)
         data[0]=0x08;
         data[1]=0x0a;
         data[4]=0x0a;
-        CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));
+        CAN1_Send_Msg(data,8,arch_GetBoardID());
         
     }   
      else if(sy->RxData[1]==0x01)
@@ -139,7 +188,7 @@ signed CanDataSystme(QUEUE_DATA_T *sy)
         data[3]=0x1d;
         data[4]=0x63;
         data[6]=0x01;          
-        CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));        
+        CAN1_Send_Msg(data,8,arch_GetBoardID());        
     }    
      else if(sy->RxData[1]==0x14&&sy->RxData[2]==0x00)
     {  
@@ -147,7 +196,7 @@ signed CanDataSystme(QUEUE_DATA_T *sy)
         data[0]=0x08;
         data[1]=0x14;
         data[4]=0x01;
-        CAN1_Send_Msg(data,8,(0x732+arch_GetBoardID()));        
+        CAN1_Send_Msg(data,8,arch_GetBoardID());        
     }
     else if(sy->RxData[1]==0x06)
     {
@@ -156,8 +205,32 @@ signed CanDataSystme(QUEUE_DATA_T *sy)
           __set_PRIMASK(1);   //关闭所有中端
           NVIC_SystemReset(); //复位     
     }
+    return 0;
+}
+/*
+系统报警命令处理
+QUEUE_DATA
+*/
+
+signed CanDatSystemAlarm(QUEUE_DATA_T *Al,Alarm * am)
+{
     
+    if(Al->RxData[1]==0x01)
+    {
+        am->SZ_AlarmStateBit =0;
+        am->TZ_AlarmStateBit=0;
+        am->DC12V_StateBit=0;
+    }
+    else if(Al->RxData[1]==0x03)
+    {
+        am->Mask=Al->RxData[2];
+        am->Mask|=Al->RxData[3]<<8;
+    }
+    else if(Al->RxData[1]==0x05)
+    {
     
+    }
+
     return 0;
 }
 /*
@@ -184,6 +257,10 @@ signed CanCmdAnalysisTask(void)
         {
              CanDataOutTeamMotor(&CanCmdRevCache);
         }
+         else if(CanCmdRevCache.RxData[0]== CancmdSystemAlarm)
+        {
+            CanDatSystemAlarm(&CanCmdRevCache,&AlarmSet);
+        }       
     }
     return 0;
 }

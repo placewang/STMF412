@@ -23,7 +23,6 @@
 #include "iwdg.h"
 #include "tim.h"
 #include "gpio.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "Led.h"
@@ -33,8 +32,8 @@
 #include "MotorCurrent.h"
 #include "MotorIo.h"
 #include "ElectricMagnetApp.h"
-
 #include "CanApp.h"
+#include "Alarm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,10 +106,10 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  /* USER CODE BEGIN 2 */
 
-//	Test_Write(0x08008000,val);
-//	val2=STMFLASH_ReadWord(0x08008000);
+  /* USER CODE BEGIN 2 */
+  ElectricMagnetInit();
+  
 
 
   /* USER CODE END 2 */
@@ -123,33 +122,14 @@ int main(void)
       
     /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
-    CanCmdAnalysisTask();  
-     
+    CanCmdAnalysisTask();    
+    MotorSensorStateLoad(&MotorSensorState);  
+    MotorSensorRequestReturnOperation(&MotorSensorState,&ProtocolCmd);  
+    AlarmTaskLoop(&AlarmSet);
     SolenidValveInOrOutTask_loop(&ProtocolCmd,&SZ_PowerTime);     
     CalculateCoilResistanceOfSolenoidTask_loop(&ProtocolCmd,&CalculationOfResistance);  
-    SZ_CurrentSamplingFiltering(&CurrentSamplingClass);      
-
-    ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换
-      
-        ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换  
-      
-    ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换
-      
-        ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换        
-     ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换
-      
-        ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换  
-    ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换
-      
-        ADC_ConvertedValue12V=Get_Adc_Hadc1(POWER012V_CH);
-    ADC_Vol_12V =(float) ADC_ConvertedValue12V/4096*(float)3.3; // 读取转换      
+    SZ_CurrentSamplingFiltering(&CurrentSamplingClass);        
+     
 
   }
   /* USER CODE END 3 */
